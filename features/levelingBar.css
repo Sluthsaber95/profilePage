@@ -1,0 +1,274 @@
+#page-scroll {
+    height: 4000px;
+}
+
+#level-wrapper {
+    display: grid;
+    grid-template-columns: 2.5% 20% 70% 7.5%;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    position: fixed;
+    top: 760px;
+    height: 140px;
+    width: 99%;
+    background-color: rgb(65, 133, 189);
+    ;
+    border-radius: 15px;
+}
+
+#white-space {
+    position: absolute;
+    height: 140px;
+    width: 100%;
+    background-color: white;
+}
+
+#img-frame {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+}
+
+#img-border {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* top: -10px; */
+    height: 300px;
+    width: 300px;
+    top: -90px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: goldenrod;
+}
+
+#img-circle {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#img-frame {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 220px;
+    height: 200px;
+    width: 300px;
+    background: rgb(65, 133, 189);
+    border-bottom-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+}
+
+.img-morty {
+    position: absolute;
+    height: 280px;
+    width: auto;
+    border-radius: 50%;
+}
+
+#img-average-morty {
+    position: absolute;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+}
+
+#label {
+    z-index: 1;
+    margin-top: 1em;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+}
+
+#progress-container {
+    display: flex;
+    align-items: center;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    height: 20px;
+    left: 10px;
+    width: auto;
+    background-color: transparent;
+}
+
+#progress-bar {
+    grid-column-start: 3;
+    grid-row-start: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 1px;
+    height: 20px;
+    left: 10px;
+    width: 85%;
+    background-color: white;
+    border-radius: 50px;
+}
+
+#progress-bar-2 {
+    grid-column-start: 3;
+    grid-row-start: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    height: 10px;
+    left: 1%;
+    background-color: goldenrod;
+    border-radius: 50px;
+}
+
+#progress-fill {
+    grid-column-start: 3;
+    grid-row-start: 4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    height: 20px;
+    left: 1%;
+    width: 100%;
+    background-color: transparent;
+}
+
+.progress-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#pop-up-msg-1 {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Droid Sans', sans-serif;
+    border-radius: 50px;
+    top: -70px;
+    left: -5%;
+    height: 50px;
+    width: 14%;
+}
+
+#pop-up-msg-2 {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Droid Sans', sans-serif;
+    border-radius: 50px;
+    top: -70px;
+    left: 27%;
+    height: 50px;
+    width: 14%;
+}
+
+#pop-up-msg-3 {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Droid Sans', sans-serif;
+    border-radius: 50px;
+    top: -70px;
+    left: 59%;
+    height: 50px;
+    width: 14%;
+}
+
+#pop-up-msg-4 {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Droid Sans', sans-serif;
+    border-radius: 50px;
+    top: -70px;
+    left: 91.5%;
+    height: 50px;
+    width: 14%;
+}
+
+#ball-1 {
+    visibility: hidden;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: goldenrod;
+}
+
+#ball-2 {
+    visibility: hidden;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: goldenrod;
+}
+
+#ball-3 {
+    visibility: hidden;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: goldenrod;
+}
+
+#ball-4 {
+    visibility: hidden;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: goldenrod;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}

@@ -1,0 +1,5 @@
+image class="img-responsive"
+
+We can clean up our code and make our Cat Photo App look more conventional by using Bootstrap's built-in styles instead of the custom styles we created earlier.
+
+  <a href="#"><img class=
