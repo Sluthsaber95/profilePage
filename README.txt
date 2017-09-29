@@ -10,6 +10,36 @@ Sound/Noise
     dot - test you approximately where all the test are
 
 -------------------------------------------------------------------------------------
+Doc Info - 30/09/2017 - 00:24
+-------------------------------------------------------------------------------------
+
+WEB DESIGN
+
+Managed to complete the footer and lander of the app, nows to fill it with content, such as
+my projects.
+
+Things for tomorrow
+
+Hidden Messages and inferences to notice, the analogy of Rick falling, also seems like he jumping, 
+straight onto the page. It would be great if I can 
+
+TASKS
+> see if I can take nice pictures of other project - ahem makesure they do not consist of white borders on the top;
+Would be great if we can find a subtle way to show the additional meta data of each project. Such as it's name, 
+stage of completion, alpha tags, completed tags etc . Also I still think it would be nice to split the project a bit
+more spaced out - more standoffish
+> Complete the panel at the bottom of each character, include languages and tools used if used, frameworks and libraries.
+Sorta like Evernote taxonomy, but more meaning full as developers and non-developers can understand from the layout
+
+> I really feel I need more space for the project section, after getting rid of all of the whitespace, need see if more
+space for this session is necessary
+
+> Being thinking a separate media query for 1024 is required, what if someone wants to go half screen;
+
+Bug Fixes
+> Images of projects are squeezed even at 1366px, so need to find a way to keep them intact -> keep them to specific size
+> If I could find a way to over these characters up with that would be great
+-------------------------------------------------------------------------------------
 Doc Info - 26/09/2017 - 02:09
 -------------------------------------------------------------------------------------
 
