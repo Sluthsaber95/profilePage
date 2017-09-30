@@ -14,8 +14,37 @@ Doc Info - 30/09/2017 - 00:24
 -------------------------------------------------------------------------------------
 
 -----------------------------
-Doc Info - 30/09/2017 - 12:29
+Doc Info - 30/09/2017 - 17:33
 -----------------------------
+
+Hidden Messages/inferences >>> terminal color of Fallout New Vegas used
+
+-----------------------------
+Doc Info - 30/09/2017 - 16:42
+-----------------------------
+
+WEB DESIGN
+
+INFO PANEL [FINISHED]
+
+-----------------------------
+Doc Info - 30/09/2017 - 13:12
+-----------------------------
+
+WEB DESIGN 
+
+INFO PANEL
+Amalgamation of different Ideas, from different sources
+
+Grandpa Ricks' Toolbox Place info as in tags of technologies learnt the past month, 
+or couple or so. 
+Explain, with a short sentence the meaning behind solo and coop mode. For non-gamers
+Place info as in tags of technologies learnt the past month, or couple or so.
+> Well used tags, that the software development industry uses
+> Have popular language badges as well
+------------------------------------------------------------
+Doc Info - 30/09/2017 - 12:29  [UPDATED] - 13:27
+------------------------------------------------------------
 
 WEB DESIGN
 
@@ -39,11 +68,13 @@ Agree to keep the infomation hidden, unless some action, allows the user to find
 Make it look like a cool Rick and Morty Classification if you can.
 
 Possible Meta data
+> Project Type Vanilla JavaScript
 > Time project start, last updated project
 > Team Projects -> contributor icons
 > Short project description
+> What did I learn to use - clean, clear simple
 
-INFOPANEL
+INFO PANEL
 
 > Well used tags, that the software development industry uses
 > Have popular language badges as well
@@ -59,7 +90,7 @@ my projects.
 
 Things for tomorrow
 
-Hidden Messages and inferences to notice, the analogy of Rick falling, also seems like he jumping, 
+Hidden Messages/inferences >>> to notice, the analogy of Rick falling, also seems like he jumping, 
 straight onto the page. It would be great if I can 
 
 TASKS

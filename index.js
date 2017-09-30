@@ -18,3 +18,6 @@
 
 
 const rickFalling = document.getElementById("img-rick-fall");
+// const testBtn = document.getElementsByClassName('project-show-1')[0];
+
+// testBtn.addEventListener('click', () => { console.log("button works") })
