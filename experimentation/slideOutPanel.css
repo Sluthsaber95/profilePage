@@ -1,3 +1,5 @@
+/*Code I believe I don't need v */
+
 body {
     margin: 0;
 }
@@ -14,10 +16,16 @@ body {
     grid-column: 2/8;
     grid-row: 2/8;
     background-color: beige;
+    /*Code I believe I don't need ^ */
+    /*copied v*/
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    /*copied ^*/
 }
+
+
+/*Code I believe I don't need v */
 
 #initial-panel {
     grid-column: 1/5;
@@ -32,39 +40,8 @@ body {
     color: white;
     font-family: Courier New, Courier, monospace;
     background-color: black;
-    /* background-image: url(http://i.imgur.com/IL9nJ3d.png); */
+    background-image: url(http://i.imgur.com/IL9nJ3d.png);
     font-family: Courier New, Courier, monospace;
-}
-
-#underneath {
-    color: rgb(64, 227, 156);
-    font-family: "Courier";
-    font-size: 20px;
-    margin: 10px 0 0 10px;
-    white-space: nowrap;
-    width: 100%;
-    animation: type 1s steps(60, end);
-    position: absolute;
-    height: 50px;
-    width: 500px;
-    overflow: hidden;
-}
-
-#underneath-2 {
-    color: transparent;
-    font-family: "Courier";
-    font-size: 20px;
-    margin: 10px 0 0 10px;
-    white-space: nowrap;
-    width: 100%;
-    animation: type 1s steps(60, end);
-    animation-delay: 2s;
-    position: absolute;
-    height: 100px;
-    width: 500px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
 }
 
 #coverup {
@@ -78,11 +55,51 @@ body {
     z-index: 0;
 }
 
-@keyframes type {
-    from {
-        width: 0;
-    }
+
+/*Code I believe I don't need ^ */
+
+#terminal-line-1 {
+    margin: 10px 0 0 60px;
+    height: 20px;
 }
+
+.underneath {
+    color: rgb(64, 227, 156);
+    font-family: "Courier";
+    font-size: 20px;
+    white-space: nowrap;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+#terminal-line-2 {
+    margin: 10px 0 0 110px;
+    height: 50px;
+}
+
+
+/*Code that isn't copied v */
+
+#terminal-line-3 {
+    margin: 10px 0 0 240px;
+    height: 75px;
+}
+
+#terminal-line-4 {
+    margin: 10px 0 0 20px;
+    height: 110px;
+}
+
+#terminal-line-5 {
+    margin: 10px 0 0 20px;
+    height: 130px;
+}
+
+
+/*Code that isn't copied ^ */
 
 @keyframes type {
     from {
@@ -104,8 +121,7 @@ body {
     width: 20px;
     font-weight: 100;
     font-size: 30px;
-    background-color: rgb(49, 254, 131);
-    animation: 1s blink step-end infinite;
+    background-color: transparent;
 }
 
 .blinking2 {
@@ -116,6 +132,24 @@ body {
     font-weight: 100;
     font-size: 30px;
     background-color: transparent;
+}
+
+@keyframes slidein {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+@keyframes slideout {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink {

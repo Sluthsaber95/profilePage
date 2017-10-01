@@ -212,18 +212,11 @@
             grid-row: 2/11;
         }
         .project-box {
-            background-color: goldenrod;
             display: grid;
             grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
             grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
         }
-        .project-show-1 {
-            grid-column: 1/11;
-            grid-row: 1/10;
-            background-color: white;
-            border: 5px solid black;
-        }
-        .project-show-1 {
+        #project-show-1 {
             grid-column: 1/11;
             grid-row: 1/10;
             background-color: white;
@@ -232,14 +225,14 @@
             justify-content: center;
             align-items: center;
         }
-        .project-show-1 img {
+        #project-show-1 img {
             max-height: 90%;
             max-width: 90%;
             -moz-transition: all 0.3s;
             -webkit-transition: all 0.3s;
             transition: all 0.3s;
         }
-        .project-show-1:hover img {
+        #project-show-1:hover img {
             -moz-transform: scale(1.1);
             -webkit-transform: scale(1.1);
             transform: scale(1.1);
@@ -248,18 +241,145 @@
             height: 100%;
             width: 100%;
         }
-        .project-show-2 {
+        #panel-slide-out-1 {
+            grid-column: 1/11;
+            grid-row: 10/21;
+            height: 100%;
+            width: 100%;
+            background-image: url(http://i.imgur.com/IL9nJ3d.png);
+            display: grid;
+            grid-template-columns: 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5%;
+            grid-template-rows: 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5%;
+        }
+        #terminal-line-1 {
+            grid-column: 2/42;
+            grid-row: 2/42;
+        }
+        .underneath {
+            color: rgb(64, 227, 156);
+            font-family: "Courier";
+            font-size: 20px;
+            white-space: nowrap;
+            width: 100%;
+            font-size: 0.9em;
+            overflow: hidden;
+        }
+        #terminal-line-2 {
+            grid-column: 2/42;
+            grid-row: 4/42;
+        }
+        #terminal-line-3 {
+            grid-column: 2/42;
+            grid-row: 6/42;
+        }
+        #terminal-line-4 {
+            grid-column: 2/42;
+            grid-row: 8/42;
+        }
+        #terminal-line-5 {
+            grid-column: 2/42;
+            grid-row: 10/42;
+        }
+        #terminal-line-6 {
+            grid-column: 2/42;
+            grid-row: 12/42;
+        }
+        #terminal-line-7 {
+            grid-column: 2/42;
+            grid-row: 14/42;
+        }
+        #terminal-line-8 {
+            grid-column: 2/42;
+            grid-row: 16/42;
+        }
+        #terminal-line-9 {
+            grid-column: 2/42;
+            grid-row: 18/42;
+        }
+        #terminal-line-10 {
+            grid-column: 2/42;
+            grid-row: 20/42;
+        }
+        #terminal-line-11 {
+            grid-column: 2/42;
+            grid-row: 22/42;
+        }
+        #terminal-line-12 {
+            grid-column: 2/42;
+            grid-row: 24/42;
+        }
+        #terminal-line-13 {
+            grid-column: 2/42;
+            grid-row: 26/42;
+        }
+        #terminal-line-14 {
+            grid-column: 2/42;
+            grid-row: 28/42;
+        }
+        #terminal-line-15 {
+            grid-column: 2/42;
+            grid-row: 30/42;
+        }
+        #terminal-line-16 {
+            grid-column: 2/42;
+            grid-row: 32/42;
+        }
+        #terminal-line-17 {
+            grid-column: 2/42;
+            grid-row: 34/42;
+        }
+        #terminal-line-18 {
+            grid-column: 2/42;
+            grid-row: 36/42;
+        }
+        #terminal-line-19 {
+            grid-column: 2/42;
+            grid-row: 38/42;
+        }
+        #terminal-line-20 {
+            grid-column: 2/42;
+            grid-row: 40/42;
+        }
+        #terminal-line-21 {
+            grid-column: 2/42;
+            grid-row: 42/50;
+        }
+        #terminal-line-22 {
+            grid-column: 2/42;
+            grid-row: 44/50;
+        }
+        .blinking {
+            grid-column: 1/20;
+            grid-row: 1/20;
+            position: relative;
+            height: 20px;
+            width: 20px;
+            font-weight: 100;
+            font-size: 30px;
+            background-color: transparent;
+        }
+        .blinking2 {
+            grid-column: 1/20;
+            grid-row: 3/20;
+            position: relative;
+            height: 20px;
+            width: 20px;
+            font-weight: 100;
+            font-size: 30px;
+            background-color: transparent;
+        }
+        #project-show-2 {
             grid-column: 11/21;
             grid-row: 1/10;
             background-color: cyan;
             border: 5px solid silver;
         }
-        .project-show-3 {
+        #project-show-3 {
             grid-column: 1/11;
             grid-row: 12/21;
             background-color: red;
         }
-        .project-show-4 {
+        #project-show-4 {
             grid-column: 11/21;
             grid-row: 12/21;
             background-color: skyblue;
@@ -482,6 +602,104 @@
             }
             to {
                 opacity: 0.3
+            }
+        }
+        @keyframes slideinheight {
+            from {
+                height: 100%;
+            }
+            to {
+                height: 0%;
+            }
+        }
+        @keyframes type {
+            from {
+                color: transparent;
+                width: 0;
+            }
+            10% {
+                color: rgb(64, 227, 156);
+            }
+            to {
+                color: rgb(64, 227, 156);
+            }
+        }
+        @keyframes slideoutheight {
+            from {
+                height: 0%;
+            }
+            to {
+                height: 100%;
+            }
+        }
+        @keyframes blink {
+            0% {
+                background-color: rgb(49, 254, 131);
+            }
+            50% {
+                background-color: transparent;
+            }
+        }
+        @keyframes blinkmove {
+            0% {
+                background-color: rgb(49, 254, 131);
+                left: 0px;
+            }
+            15% {
+                background-color: rgb(49, 254, 131);
+            }
+            19% {
+                background-color: transparent;
+            }
+            49% {
+                background-color: transparent;
+            }
+            50% {
+                background-color: transparent;
+            }
+            55% {
+                background-color: rgb(49, 254, 131);
+            }
+            65% {
+                background-color: rgb(49, 254, 131);
+            }
+            67% {
+                background-color: transparent;
+            }
+            100% {
+                background-color: transparent;
+                left: 500px;
+            }
+        }
+        @keyframes blinkmove2 {
+            0% {
+                background-color: rgb(49, 254, 131);
+                left: 80px;
+            }
+            15% {
+                background-color: rgb(49, 254, 131);
+            }
+            19% {
+                background-color: transparent;
+            }
+            49% {
+                background-color: transparent;
+            }
+            50% {
+                background-color: transparent;
+            }
+            55% {
+                background-color: rgb(49, 254, 131);
+            }
+            65% {
+                background-color: rgb(49, 254, 131);
+            }
+            67% {
+                background-color: transparent;
+            }
+            100% {
+                background-color: transparent;
+                left: 435px;
             }
         }
     }

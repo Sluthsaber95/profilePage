@@ -9,10 +9,53 @@ Sound/Noise
     landing - Should test out nice mocha features "landing", test progress bar.
     dot - test you approximately where all the test are
 
+
+-------------------------------------------------------------------------------------
+Doc Info - 01/10/2017 - 10:20
+-------------------------------------------------------------------------------------
+-----------------------------
+Doc Info - 01/10/2017 - 16:08
+-----------------------------
+
+WEB DEVELOPMENT
+
+Really annoyed that I can't reset the variables, after the time out
+
+Things I've tried
+
+Resetting a time out is easy, it is just even thought I have already fired the function once, 
+I try fire it again and the variables would not change - more specifically variables that are 
+linked to getElementById option -> and I don't want to use jQuery.
+
+Okay, I have spent 3 hours on this problem, I'm gonna move on to something else, such as web 
+design side of things.
+
+-----------------------------
+Doc Info - 01/10/2017 - 10:20
+-----------------------------
+
+WEB DEVELOPMENT
+
+slideOutPanel.css >  Going to bottom to top, need to copy blinking on index.css 
+
 -------------------------------------------------------------------------------------
 Doc Info - 30/09/2017 - 00:24
 -------------------------------------------------------------------------------------
 
+--------------------------------------------
+Doc Info - 1/09/2017 - 01:00 [UPDATED] 01:52
+--------------------------------------------
+
+Hidden Messages/inferences >>> the terminal has a Doctor Who Reference and a James bond reference
+Prospector Saloon in New Vegas
+RBIOS on the loading page - states the codes sent to deploy the suits on look who is purging now episodes
+>> I need to a continuity one
+>> Have an on going theme in all the pages I make from now on
+--> everything must be taken into consideration, from font to color
+>> Have a meta analogy, like an easter egg to signify that the whole webpage is full of easter eggs, 
+Set up a falloutTerminal.txt
+
+Want to accumulate all the knowledge I learnt into here
 -----------------------------
 Doc Info - 30/09/2017 - 17:33
 -----------------------------
