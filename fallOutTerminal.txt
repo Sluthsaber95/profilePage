@@ -34,7 +34,8 @@ Last Updated: 01/10/2017
 Progress: [=========-------] 56% -Alpha 0.1.0 (16 bars)
 Description + Skills + Knowledge Acquired:
 Contributors: {names here}
-Github Page: https://github.com/anthonytranDev/JavaScript_Calculator
+Github Page: 
+https://github.com/anthonytranDev/JavaScript_Calculator
 
 Anthony Tran
 
