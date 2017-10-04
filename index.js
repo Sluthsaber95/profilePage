@@ -559,3 +559,110 @@ progressBox.addEventListener("scroll", () => {
 });
 
 // progressBox1.scrollTop
+
+const progressBar = document.getElementById("progress-bar-2");
+const progress = document.getElementById("progress-bar");
+
+
+const labelLevel = document.getElementById("label");
+const ball1 = document.getElementById("ball-1");
+const ball2 = document.getElementById("ball-2");
+const ball3 = document.getElementById("ball-3");
+const ball4 = document.getElementById("ball-4");
+const imgCircle = document.getElementById("img-circle");
+const scrollingDetected = () => {
+
+}
+window.addEventListener("scroll", () => {
+
+    do {
+        scrollLength = window.pageYOffset / 55;
+        progressBar.style.width = scrollLength + "%";
+        if (scrollLength < 0) {
+            ball1.style.visibility = "hidden";
+            ball1.style.animation = "fadeout .5s";
+        } else {
+            ball1.style.visibility = "visible";
+            ball1.style.animation = "fadein .5s";
+            imgCircle.innerHTML = '<img id="img-average-morty" src="https://vignette.wikia.nocookie.net/rickandmorty/images/1/18/PM001.png/revision/latest/scale-to-width-down/50?cb=20160117042528" alt="Average Morty">'
+        }
+        if (scrollLength < 31) {
+            ball2.style.visibility = "hidden";
+            ball2.style.animation = "fadeout .5s";
+        } else {
+            // msg1.style.visibility = "visible";
+            ball2.style.visibility = "visible";
+            ball2.style.animation = "fadein .5s";
+            imgCircle.innerHTML = '<img src="https://vignette.wikia.nocookie.net/rickandmorty/images/3/3e/PM038.png/revision/latest/scale-to-width-down/50?cb=20160922033738">';
+        }
+        if (scrollLength < 64) {
+            ball3.style.visibility = "hidden";
+            ball3.style.animation = "fadeout .5s";
+        } else {
+            ball3.style.visibility = "visible";
+            ball3.style.animation = "fadein .5s";
+            imgCircle.innerHTML = '<img src="https://vignette.wikia.nocookie.net/rickandmorty/images/a/aa/PM049.png/revision/latest/scale-to-width-down/50?cb=20160118224239">';
+        }
+        if (scrollLength < 96) {
+            ball4.style.visibility = "hidden";
+            ball4.style.animation = "fadeout .5s";
+        } else {
+            ball4.style.visibility = "visible";
+            ball4.style.animation = "fadein .5s";
+            imgCircle.innerHTML = '<img id="img-one-true-morty" src="https://vignette.wikia.nocookie.net/rickandmorty/images/4/4f/PM082.png/revision/latest/scale-to-width-down/50?cb=20160923003851" alt="one true morty">';
+        }
+
+    } while (progressBar.style.width < 0.90);
+
+});
+
+
+
+const arrowBoxContain = document.getElementById("arrow-box-contain");
+const bulletPoint3 = document.getElementById("bullet-point-3");
+const slideLevelBar = document.getElementById("slide-in-level-bar");
+const levelWrapper = document.getElementById("level-wrapper");
+const fadeBox = document.getElementById("fade-box");
+
+arrowBoxContain.addEventListener("click", () => {
+    if(slideLevelBar.style.width === "" || slideLevelBar.style.width === "30%"){
+        fadeBox.style.animation = "0.15 fadeout";
+        setTimeout(()=>{
+            fadeBox.style.opacity = 0;
+        }, 150);
+        // fadeBox.style.width = "80px";
+        slideLevelBar.style.animation = "1s levelingbarwidthshorten";
+        slideLevelBar.style.width = "80px";
+        arrowBoxContain.style.animation = "1s slideintill80"
+        arrowBoxContain.style.left = "80px";
+        bulletPoint3.style.animation = "0.4s rotate180clockwise";
+        bulletPoint3.style.transform = "rotate(360deg)"
+        setTimeout(()=>{
+            ball1.style.visibility = "hidden";
+            ball2.style.visibility = "hidden";
+            ball3.style.visibility = "hidden";
+            ball4.style.visibility = "hidden";
+        }, 150);
+    }
+    else {
+        slideLevelBar.style.animation = "1s levelingbarwidthlengthen";
+        slideLevelBar.style.width = "30%";
+        setTimeout(()=>{
+            fadeBox.style.animation = "0.5s fadein ";
+            fadeBox.style.opacity = 1;
+        },500);
+        arrowBoxContain.style.animation = "1s slideouttill550"
+        arrowBoxContain.style.left = "550px";
+        bulletPoint3.style.animation = "0.4s rotate180Anticlockwise";
+        bulletPoint3.style.transform = "rotate(180deg)"
+        ball1.style.animation = "fadein .5s";
+        ball1.style.visibility = "visible";
+        ball2.style.animation = "fadein .5s";
+        ball2.style.visibility = "visible";
+        ball3.style.animation = "fadein .5s";
+        ball3.style.visibility = "visible";
+        ball4.style.animation = "fadein .5s";
+        ball4.style.visibility = "visible";
+        
+    }
+});

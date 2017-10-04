@@ -2,6 +2,7 @@
         body {
             margin: 0;
         }
+        /*Start Page*/
         #grid-wrapper {
             display: grid;
             grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
@@ -951,6 +952,208 @@
             display: flex;
             justify-content: space-around;
         }
+        /*Leveling Bar Feature*/
+        #icon-morty-wrapper {
+            position: fixed;
+            top: 875px;
+            height: 100px;
+            width: 80px;
+            background-color: rgb(65, 133, 189);
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            border-radius: 15px 0px 0px 15px;
+        }
+        #white-space {
+            position: absolute;
+            height: 140px;
+            width: 100%;
+            background-color: white;
+        }
+        #img-border {
+            grid-column-start: 1;
+            grid-row: 2/3;
+            margin-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            /* top: -10px; */
+            height: 60px;
+            width: 60px;
+            top: 0px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: goldenrod;
+        }
+        #img-circle {
+            grid-column-start: 2;
+            grid-row-start: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            background-color: white;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        #img-average-morty {
+            position: absolute;
+        }
+        #slide-in-level-bar {
+            background-color: rgb(65, 133, 189);
+            position: fixed;
+            top: 875px;
+            height: 100px;
+            width: 30%;
+            border-radius: 15px 0px 0px 15px;
+        }
+        #fade-box {
+            position: fixed;
+            top: 875px;
+            height: 100px;
+            width: 30%;
+            background-color: transparent;
+            display: grid;
+            grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            border-radius: 15px 0px 0px 15px;
+        }
+        #label {
+            grid-column: 2/5;
+            grid-row: 1/5;
+            z-index: 1;
+            margin-top: 1em;
+            margin-left: 30px;
+            font-family: 'Droid Sans', sans-serif;
+            font-weight: bold;
+            font-size: 1em;
+            border-radius: 5px;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 10% 40% 40% 10%;
+            grid-template-rows: 1fr 1fr 2fr 2fr 2fr 1fr 1fr
+        }
+        #morty-name {
+            grid-column: 2/5;
+            grid-row: 2/3;
+        }
+        #morty-level {
+            grid-column: 2/4;
+            grid-row: 4/5;
+        }
+        #progress-container {
+            display: flex;
+            align-items: center;
+            grid-column-start: 4;
+            grid-row: 4/5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 0px;
+            height: 20px;
+            left: 100px;
+            width: auto;
+            background-color: transparent;
+        }
+        #progress-bar {
+            grid-column-start: 4;
+            grid-row: 3/5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 1px;
+            height: 20px;
+            left: 100px;
+            width: 60%;
+            background-color: white;
+            border-radius: 50px;
+        }
+        #progress-bar-2 {
+            grid-column-start: 4;
+            grid-row-start: 4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 5px;
+            height: 10px;
+            left: 1%;
+            background-color: goldenrod;
+            border-radius: 50px;
+        }
+        #progress-fill {
+            grid-column-start: 2;
+            grid-row-start: 4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            top: 0px;
+            height: 20px;
+            left: 1%;
+            width: 100%;
+            background-color: transparent;
+        }
+        .progress-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        #ball-1 {
+            visibility: hidden;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: goldenrod;
+        }
+        #ball-2 {
+            visibility: hidden;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: goldenrod;
+        }
+        #ball-3 {
+            visibility: hidden;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: goldenrod;
+        }
+        #ball-4 {
+            visibility: hidden;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: goldenrod;
+        }
+        #arrow-box-contain {
+            position: fixed;
+            top: 875px;
+            left: 550px;
+            height: 100px;
+            width: 50px;
+            background-color: rgb(65, 133, 189);
+            border-radius: 0px 15px 15px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #bullet-point-3 {
+            width: 30px;
+            height: 30px;
+            transform: rotate(180deg);
+            grid-column: 10/11;
+            grid-row: 2/5;
+        }
+        /*Animations*/
         @keyframes fadein {
             from {
                 opacity: 0
@@ -981,6 +1184,22 @@
             }
             to {
                 transform: rotate(0deg);
+            }
+        }
+        @keyframes rotate180clockwise {
+            from {
+                transform: rotate(180deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes rotate180Anticlockwise {
+            from {
+                transform: rotate(360deg);
+            }
+            to {
+                transform: rotate(180deg);
             }
         }
         @keyframes slideinheight {
@@ -1079,6 +1298,38 @@
             100% {
                 background-color: transparent;
                 left: 435px;
+            }
+        }
+        @keyframes slideintill80 {
+            from {
+                left: 550px;
+            }
+            to {
+                left: 80px;
+            }
+        }
+        @keyframes slideouttill550 {
+            from {
+                left: 80px;
+            }
+            to {
+                left: 550px;
+            }
+        }
+        @keyframes levelingbarwidthshorten {
+            from {
+                width: 30%;
+            }
+            to {
+                width: 80px;
+            }
+        }
+        @keyframes levelingbarwidthlengthen {
+            from {
+                width: 80px;
+            }
+            to {
+                width: 30%;
             }
         }
     }
