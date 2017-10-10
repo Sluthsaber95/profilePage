@@ -1,0 +1,375 @@
+//color palette
+$steel-blue:rgb(50, 88, 107);
+$cornflour-blue: rgb(60, 105, 128);
+$sky-blue: rgb(141, 189, 216);
+$silver: rgb(192, 192, 192);
+$lime-green: rgb(64, 227, 156);
+$white: white;
+$black: black;
+$border-black: 5px solid black;
+//fonts
+$roboto:'Roboto',
+sans-serif;
+$roboto-slab: 'Roboto Slab',
+serif;
+$courier: 'Courier',
+sans-serif;
+// measurements
+$full-circle: 50%;
+$shaved-borders: 20px;
+// Mobile screens Portrait {Date: Before and including 2014}
+// iPhone 6, Galaxy S5 
+@media screen and (min-width: 280px) {
+    // @mixin border-radius($radius) {
+    //     -webkit-border-radius: $radius;
+    //        -moz-border-radius: $radius;
+    //         -ms-border-radius: $radius;
+    //             border-radius: $radius;
+    //   }
+    //   .box { @include border-radius(10px); }
+    .parallax {
+        //offsets background, works with .js to give parallax effect
+        background-position: 50% 0px;
+        background-image: url(https://images2.alphacoders.com/633/633149.jpg);
+    }
+    .flex {
+        height: 250px;
+        display: flex;
+    }
+    .flex-start {
+        @extend .flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .flex-center {
+        @extend .flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-end {
+        @extend .flex;
+        justify-content: flex-end;
+    }
+    .title-container {
+        height: 80px;
+        width: 100%;
+        .title {
+            font-family: $roboto-slab;
+            font-size: 1.5em;
+        }
+    }
+    .white-space {
+        height: 80px;
+    }
+    body {
+        margin: 0;
+        height: 5750px;
+        .landing-wrapper {
+            height: 1000px;
+            width: 100%;
+            @extend .parallax;
+            #lander-title {
+                height: 10vh;
+                width: 90vw;
+                align-self: flex-end;
+            }
+            #img-rick-fall {
+                height: 200px;
+            }
+            #img-cromulon {
+                height: 150px;
+                margin-right: 20px;
+                transform: scaleX(-1);
+                float: right;
+                align-self: end;
+            }
+        }
+        .projects {
+            height: 2500px;
+            width: 100%;
+            background-color: $silver;
+            .empty-space {
+                height: 25px;
+                width: 100%;
+                background-color: $white;
+            }
+            .solo-projects {
+                height: 1125px;
+                .character-box {
+                    height: 320px;
+                    width: 100%;
+                    @extend .title-container;
+                    .img-container {
+                        height: 160px;
+                        .circle-container {
+                            height: 150px;
+                            width: 150px;
+                            border: $border-black;
+                            border-radius: $full-circle;
+                            background-color: $white;
+                            #img-morty {
+                                height: inherit;
+                            }
+                        }
+                        .player-tag {
+                            position: absolute;
+                            margin-top: 75px;
+                            height: 45px;
+                            width: 150px;
+                            border-radius: $shaved-borders;
+                            font-family: $roboto;
+                            font-size: 1em;
+                            background-color: $black;
+                            color: $white;
+                        }
+                    }
+                }
+                @extend .empty-space;
+                .project-box {
+                    height: 170px;
+                    width: 100%;
+                    button {
+                        text-align: start;
+                    }
+                    .project-btn {
+                        position: absolute;
+                        padding: 0;
+                        height: 160px;
+                        width: 280px;
+                        border: $border-black;
+                        background-color: $white;
+                        .project-img {
+                            // position: absolute;
+                            height: 150px;
+                            width: 270px;
+                        }
+                        .terminal-text {
+                            font-family: $courier;
+                            font-size: 0.68em;
+                            margin: 4px 0px 4px 5px;
+                            color: $lime-green;
+                        }
+                        a {
+                            color: $lime-green;
+                        }
+                    }
+                }
+            }
+            .coop-projects {
+                @extend .solo-projects;
+                #img-rick-morty {
+                    height: 150px;
+                }
+            }
+        }
+        .progress {
+            height: 750px;
+            background-color: $sky-blue;
+            @extend .title-container;
+            .graph-area {
+                height: 335px;
+                width: 100%;
+                .graph {
+                    height: 180px;
+                    width: 280px;
+                    border-bottom: $border-black;
+                    border-left: $border-black;
+                    background-color: $white;
+                }
+            }
+            .progress-box {
+                height: 335px;
+                width: 100%;
+                .scroll-box {
+                    height: 224px;
+                    width: inherit;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    .scroll-area {
+                        height: 600px;
+                        width: inherit;
+                        background-color: palegoldenrod;
+                    }
+                }
+            }
+        }
+        .profile {
+            height: 1000px;
+            background-image: url("http://i.imgur.com/0ktqxSg.png");
+            @extend .parallax;
+            @extend .white-space;
+            .portfolio {
+                height: 250px;
+                width: 100%;
+                .profile-img {
+                    height: inherit;
+                    width: 250px;
+                    border-radius: $full-circle;
+                    background-color: $white;
+                }
+            }
+            .author-info {
+                height: 500px;
+                width: 100%;
+                .about-me {
+                    height: 500px;
+                    width: 100%;
+                    background-color: $white;
+                    font-family: 'Roboto', sans-serif;
+                    background-color: white;
+                    .content-margin {
+                        letter-spacing: 0.09em;
+                        line-height: 1.5em;
+                        margin: 5%;
+                        margin-top: 10%;
+                    }
+                    .text-center {
+                        text-align: center;
+                    }
+                    #design-title {
+                        margin-top: 10%;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        height: 500px;
+        width: 100%;
+        .social-media-icon {
+            height: 40px;
+            width: 40px;
+        }
+        .details {
+            height: 250px;
+            width: 100%;
+            background-color: $steel-blue;
+            display: flex;
+            justify-content: space-around;
+            .contact-info {
+                height: 250px;
+                width: 250px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.9em;
+                text-align: center;
+                .contact-name {
+                    margin-top: 10%;
+                    color: white;
+                    font-family: 'Roboto Slab', serif;
+                    font-size: 1.1em;
+                    letter-spacing: 0.12em;
+                }
+            }
+            .phone-number {
+                margin-top: 10px;
+                height: 25px;
+                width: 100%;
+                letter-spacing: 0.12em;
+                color: rgb(235, 235, 235);
+            }
+            .email-info {
+                margin-top: 20px;
+                height: 25px;
+                width: 100%;
+                letter-spacing: 0.12em;
+                color: rgb(211, 211, 211);
+            }
+            .address {
+                width: 100%;
+                height: 90px;
+                letter-spacing: 0.12em;
+                color: rgb(235, 235, 235);
+                ul {
+                    list-style-type: none;
+                    padding-left: 20px;
+                    li {
+                        list-style-type: none;
+                        padding: 2.5px 0px 2.5px 0px
+                    }
+                }
+            }
+        }
+        #social-details {
+            @extend .details;
+            background-color: $cornflour-blue;
+            #social-info {
+                width: 250px;
+                height: 250px;
+                #social-layout {
+                    width: inherit;
+                    height: 125px;
+                    #social-name {
+                        width: inherit;
+                        height: 62.5px;
+                        font-family: $roboto-slab;
+                        font-size: 1.1em;
+                        letter-spacing: 0.12em;
+                        color: white;
+                    }
+                    @extend .social-media-icon;
+                    #social-icons {
+                        width: 250px;
+                        height: 62.5px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                }
+                #event-layout {
+                    width: 250px;
+                    height: 125px;
+                }
+                #event-name {
+                    width: 250px;
+                    height: 62.5px;
+                    color: $white;
+                    font-family: $roboto-slab;
+                    font-size: 1.1em;
+                    letter-spacing: 0.12em;
+                }
+                #event-icons {
+                    width: 250px;
+                    height: 62.5px;
+                }
+                #icon-centralise {
+                    width: 150px;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
+    }
+}
+
+// Phablets and Tablets
+@media screen and (min-width: 720px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+// Displays + High Resolution Tablets
+@media screen and (min-width: 1366px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+// Animations
+@keyframes fadein {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}

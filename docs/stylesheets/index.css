@@ -1,0 +1,256 @@
+@media screen and (min-width: 280px) {
+  .parallax, body .landing-wrapper, body .profile {
+    background-position: 50% 0px;
+    background-image: url(https://images2.alphacoders.com/633/633149.jpg); }
+  .flex, .flex-start, .flex-center, .flex-end {
+    height: 250px;
+    display: flex; }
+  .flex-start {
+    justify-content: flex-start;
+    align-items: center; }
+  .flex-center {
+    justify-content: center;
+    align-items: center; }
+  .flex-end {
+    justify-content: flex-end; }
+  .title-container, body .projects .solo-projects .character-box, body .projects .coop-projects .character-box, body .progress {
+    height: 80px;
+    width: 100%; }
+    .title-container .title, body .projects .solo-projects .character-box .title, body .projects .coop-projects .character-box .title, body .progress .title {
+      font-family: "Roboto Slab", serif;
+      font-size: 1.5em; }
+  .white-space, body .profile {
+    height: 80px; }
+  body {
+    margin: 0;
+    height: 5750px; }
+    body .landing-wrapper {
+      height: 1000px;
+      width: 100%; }
+      body .landing-wrapper #lander-title {
+        height: 10vh;
+        width: 90vw;
+        align-self: flex-end; }
+      body .landing-wrapper #img-rick-fall {
+        height: 200px; }
+      body .landing-wrapper #img-cromulon {
+        height: 150px;
+        margin-right: 20px;
+        transform: scaleX(-1);
+        float: right;
+        align-self: end; }
+    body .projects {
+      height: 2500px;
+      width: 100%;
+      background-color: silver; }
+      body .projects .empty-space, body .projects .solo-projects, body .projects .coop-projects {
+        height: 25px;
+        width: 100%;
+        background-color: white; }
+      body .projects .solo-projects, body .projects .coop-projects {
+        height: 1125px; }
+        body .projects .solo-projects .character-box, body .projects .coop-projects .character-box {
+          height: 320px;
+          width: 100%; }
+          body .projects .solo-projects .character-box .img-container, body .projects .coop-projects .character-box .img-container {
+            height: 160px; }
+            body .projects .solo-projects .character-box .img-container .circle-container, body .projects .coop-projects .character-box .img-container .circle-container {
+              height: 150px;
+              width: 150px;
+              border: 5px solid black;
+              border-radius: 50%;
+              background-color: white; }
+              body .projects .solo-projects .character-box .img-container .circle-container #img-morty, body .projects .coop-projects .character-box .img-container .circle-container #img-morty {
+                height: inherit; }
+            body .projects .solo-projects .character-box .img-container .player-tag, body .projects .coop-projects .character-box .img-container .player-tag {
+              position: absolute;
+              margin-top: 75px;
+              height: 45px;
+              width: 150px;
+              border-radius: 20px;
+              font-family: "Roboto", sans-serif;
+              font-size: 1em;
+              background-color: black;
+              color: white; }
+        body .projects .solo-projects .project-box, body .projects .coop-projects .project-box {
+          height: 170px;
+          width: 100%; }
+          body .projects .solo-projects .project-box button, body .projects .coop-projects .project-box button {
+            text-align: start; }
+          body .projects .solo-projects .project-box .project-btn, body .projects .coop-projects .project-box .project-btn {
+            position: absolute;
+            padding: 0;
+            height: 160px;
+            width: 280px;
+            border: 5px solid black;
+            background-color: white; }
+            body .projects .solo-projects .project-box .project-btn .project-img, body .projects .coop-projects .project-box .project-btn .project-img {
+              height: 150px;
+              width: 270px; }
+            body .projects .solo-projects .project-box .project-btn .terminal-text, body .projects .coop-projects .project-box .project-btn .terminal-text {
+              font-family: "Courier", sans-serif;
+              font-size: 0.68em;
+              margin: 4px 0px 4px 5px;
+              color: #40e39c; }
+            body .projects .solo-projects .project-box .project-btn a, body .projects .coop-projects .project-box .project-btn a {
+              color: #40e39c; }
+      body .projects .coop-projects #img-rick-morty {
+        height: 150px; }
+    body .progress {
+      height: 750px;
+      background-color: #8dbdd8; }
+      body .progress .graph-area {
+        height: 335px;
+        width: 100%; }
+        body .progress .graph-area .graph {
+          height: 180px;
+          width: 280px;
+          border-bottom: 5px solid black;
+          border-left: 5px solid black;
+          background-color: white; }
+      body .progress .progress-box {
+        height: 335px;
+        width: 100%; }
+        body .progress .progress-box .scroll-box {
+          height: 224px;
+          width: inherit;
+          overflow-y: scroll;
+          overflow-x: hidden; }
+          body .progress .progress-box .scroll-box .scroll-area {
+            height: 600px;
+            width: inherit;
+            background-color: palegoldenrod; }
+    body .profile {
+      height: 1000px;
+      background-image: url("http://i.imgur.com/0ktqxSg.png"); }
+      body .profile .portfolio {
+        height: 250px;
+        width: 100%; }
+        body .profile .portfolio .profile-img {
+          height: inherit;
+          width: 250px;
+          border-radius: 50%;
+          background-color: white; }
+      body .profile .author-info {
+        height: 500px;
+        width: 100%; }
+        body .profile .author-info .about-me {
+          height: 500px;
+          width: 100%;
+          background-color: white;
+          font-family: 'Roboto', sans-serif;
+          background-color: white; }
+          body .profile .author-info .about-me .content-margin {
+            letter-spacing: 0.09em;
+            line-height: 1.5em;
+            margin: 5%;
+            margin-top: 10%; }
+          body .profile .author-info .about-me .text-center {
+            text-align: center; }
+          body .profile .author-info .about-me #design-title {
+            margin-top: 10%; }
+  footer {
+    height: 500px;
+    width: 100%; }
+    footer .social-media-icon, footer #social-details #social-info #social-layout {
+      height: 40px;
+      width: 40px; }
+    footer .details, footer #social-details {
+      height: 250px;
+      width: 100%;
+      background-color: #32586b;
+      display: flex;
+      justify-content: space-around; }
+      footer .details .contact-info, footer #social-details .contact-info {
+        height: 250px;
+        width: 250px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 0.9em;
+        text-align: center; }
+        footer .details .contact-info .contact-name, footer #social-details .contact-info .contact-name {
+          margin-top: 10%;
+          color: white;
+          font-family: 'Roboto Slab', serif;
+          font-size: 1.1em;
+          letter-spacing: 0.12em; }
+      footer .details .phone-number, footer #social-details .phone-number {
+        margin-top: 10px;
+        height: 25px;
+        width: 100%;
+        letter-spacing: 0.12em;
+        color: #ebebeb; }
+      footer .details .email-info, footer #social-details .email-info {
+        margin-top: 20px;
+        height: 25px;
+        width: 100%;
+        letter-spacing: 0.12em;
+        color: lightgray; }
+      footer .details .address, footer #social-details .address {
+        width: 100%;
+        height: 90px;
+        letter-spacing: 0.12em;
+        color: #ebebeb; }
+        footer .details .address ul, footer #social-details .address ul {
+          list-style-type: none;
+          padding-left: 20px; }
+          footer .details .address ul li, footer #social-details .address ul li {
+            list-style-type: none;
+            padding: 2.5px 0px 2.5px 0px; }
+    footer #social-details {
+      background-color: #3c6980; }
+      footer #social-details #social-info {
+        width: 250px;
+        height: 250px; }
+        footer #social-details #social-info #social-layout {
+          width: inherit;
+          height: 125px; }
+          footer #social-details #social-info #social-layout #social-name {
+            width: inherit;
+            height: 62.5px;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.1em;
+            letter-spacing: 0.12em;
+            color: white; }
+          footer #social-details #social-info #social-layout #social-icons {
+            width: 250px;
+            height: 62.5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center; }
+        footer #social-details #social-info #event-layout {
+          width: 250px;
+          height: 125px; }
+        footer #social-details #social-info #event-name {
+          width: 250px;
+          height: 62.5px;
+          color: white;
+          font-family: "Roboto Slab", serif;
+          font-size: 1.1em;
+          letter-spacing: 0.12em; }
+        footer #social-details #social-info #event-icons {
+          width: 250px;
+          height: 62.5px; }
+        footer #social-details #social-info #icon-centralise {
+          width: 150px;
+          display: flex;
+          justify-content: space-around; } }
+
+@media screen and (min-width: 720px) {
+  body {
+    background-color: lightgreen; } }
+
+@media screen and (min-width: 1366px) {
+  body {
+    background-color: lightgreen; } }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeout {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }

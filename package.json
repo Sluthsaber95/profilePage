@@ -1,0 +1,27 @@
+{
+    "name": "profilePage",
+    "version": "1.0.0",
+    "description": "My Professional Profile Page",
+    "main": "interactiveGraph.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "node-sass  --watch index.scss -o stylesheets/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/anthonytranDev/profilePage.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/anthonytranDev/profilePage/issues"
+    },
+    "homepage": "https://github.com/anthonytranDev/profilePage#readme",
+    "devDependencies": {
+        "node-sass": "^4.5.3"
+    }
+}
