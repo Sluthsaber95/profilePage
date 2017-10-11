@@ -5,270 +5,229 @@
     <title></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="index.css" rel="stylesheet">
+    <link href="./stylesheets/css/index.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 </head>
 
 <body>
-    <div id="grid-wrapper">
-        <div id="lander-wrapper" class="parallax">
+    <section class="landing-wrapper parallax" alt="landing-section">
+        <div class="flex-center">
+            <img id="lander-title" src="https://image.ibb.co/iKiXYw/show_Me_What_You_Got.png" alt="show me what you got">
+        </div>
+        <div class="flex"></div>
+        <div class="flex-end">
+            <img id="img-cromulon" src="https://image.ibb.co/i5vqLb/Cromulon.png" alt="cromulon">
+        </div>
+        <div class="flex-start">
             <img id="img-rick-fall" src="https://orig12.deviantart.net/94ff/f/2015/281/d/e/rick_render_by_oldandnewshowsforevs-d9cf59s.png" alt="rick falling">
-            <img id="title-show-me-what-you-got" src="http://res.cloudinary.com/dgjd4k5na/image/upload/v1507498138/showMeWhatYouGot_thspuj.png" alt="show me what you got">
-            <img id="img-cromulon" src="http://i.imgur.com/jBwJzeu.png" alt="cromulon">
         </div>
-        <div id="projects">
-            <div id="project-title">Projects</div>
-            <section id="character-display-1">
-                <div id="character-container-1">
-                    <div id="solo-player">
-                        <div id="bg-oval-1">
-                            <img id="img-morty-solo" src="https://vignette.wikia.nocookie.net/vsbattles/images/6/69/PM-001.png/revision/latest?cb=20161127203807" alt="morty solo">
-                        </div>
+    </section>
+    <section class="projects" alt="project-section">
+        <section id="solo-projects" class="solo-projects">
+            <section class="character-box">
+                <!-- [Title = Project] -->
+                <article class="title-container flex-center">
+                    <div class="title">Projects</div>
+                </article>
+                <!-- [Img = Morty] -->
+                <article class="img-container flex-center">
+                    <div class="circle-container flex-center">
+                        <img id="img-morty" src="https://vignette.wikia.nocookie.net/vsbattles/images/6/69/PM-001.png/revision/latest?cb=20161127203807" alt="morty solo">
                     </div>
-                    <div id="solo-title">Solo Projects</div>
-                </div>
+                    <div class="player-tag flex-center">
+                        Solo Projects
+                    </div>
+                </article>
+                <article class="white-space">
+
+                </article>
             </section>
-            <div id="project-box-1" class="project-box">
-                <section class="mobile-center-1">
-                    <section id="layer-1">
-                        <div id="project-show-1">
-                            <img id="google-calculator-clone" src="http://res.cloudinary.com/dgjd4k5na/image/upload/v1507498303/javascript_calculator_othez9.png" alt="JavaScript Calcultor Web App">
-                        </div>
-                        <div id="project-show-2">
-                            <img id="pomodoro-clock" src="http://res.cloudinary.com/dgjd4k5na/image/upload/v1507498310/pomodoro_clock_cwpvbp.png" alt="pomodoro clock app">
-                        </div>
-                    </section>
-                </section>
-
-                <section class="mobile-center-2">
-                    <section id="layer-2">
-                        <div id="project-show-3">
-                            <img id="tic-tac-toe" src="http://res.cloudinary.com/dgjd4k5na/image/upload/v1507498317/tic_tac_toe_sthosh.png" alt="tic-tac-toe-game">
-                        </div>
-                        <div id="project-show-4">
-                            <img id="portfolio-page" src="http://res.cloudinary.com/dgjd4k5na/image/upload/v1507498321/rick_and_morty_portfolio_oyli9l.png" alt="rick and morty profile page">
-                        </div>
-                    </section>
-                </section>
-
-                <section class="mobile-center-1">
-                    <section id="layer-1">
-                        <div id="panel-slide-out-1">
-                            <div id="panel-content-1"></div>
-                        </div>
-                        <div id="panel-slide-out-2">
-                            <div id="panel-content-2"></div>
-                        </div>
-                    </section>
-                </section>
-
-                <section class="mobile-center-2">
-                    <section id="layer-2">
-                        <div id="panel-slide-out-3">
-                            <div id="panel-content-3"></div>
-                        </div>
-                        <div id="panel-slide-out-4">
-                            <div id="panel-content-4"></div>
-                        </div>
-                    </section>
-                </section>
-
-            </div>
-            <section id="character-display-2">
-                <div id="character-container-2">
-                    <div id="player-stats-2">
-                        <div id="bg-oval-2">
-                            <img id="img-rick-and-morty" src="http://www.pngmart.com/files/3/Rick-And-Morty-Transparent-PNG.png" alt="rick and morty coop">
-                        </div>
+            <article class="empty-space"></article>
+            <article class="project-box flex-center">
+                <button class="project-btn">
+                    <!-- <div>Hello</div> -->
+                    <img id="project-0" class="project-img" src="https://image.ibb.co/iPHO6G/javascript_calculator.png" alt="Google calculator clone">
+                </button>
+            </article>
+            <article class="empty-space"></article>
+            <article class="project-box flex-center">
+                <button class="project-btn">
+                    <img id="project-1" class="project-img" src="https://image.ibb.co/db3MRG/pomodoro_clock.png" alt="pomodoro clock app">
+                </button>
+            </article>
+            <article class="empty-space"></article>
+            <article class="project-box flex-center">
+                <button class="project-btn">
+                    <img id="project-2" class="project-img" src="https://image.ibb.co/fmSRtw/tic_tac_toe.png" alt="tic tac toe game">
+                </button>
+            </article>
+            <article class="empty-space"></article>
+            <article class="project-box flex-center">
+                <button class="project-btn">
+                    <img id="project-3" class="project-img" src="https://preview.ibb.co/m8do6G/rick_and_morty_portfolio.png" alt="rick and morty profile page">
+                </button>
+            </article>
+            <article class="empty-space"></article>
+        </section>
+        <section class="coop-projects">
+            <section class="character-box">
+                <!-- [Title = Project] -->
+                <article class="white-space"></article>
+                <!-- [Img = Morty] -->
+                <article class="img-container flex flex-center">
+                    <div class="circle-container flex flex-center">
+                        <img id="img-rick-morty" src="http://www.pngmart.com/files/3/Rick-And-Morty-Transparent-PNG.png" alt="rick morty coop image">
                     </div>
-                    <div id="coop-title">Co-op Projects</div>
-                </div>
+                    <div class="player-tag flex-center">
+                        Co-op Projects
+                    </div>
+                </article>
+                <article class="white-space"></article>
             </section>
-            <div id="project-box-2" class="project-box">
-                <section class="mobile-center-1">
-                    <section id="layer-1">
-                        <div id="project-show-5">
-                            <img id="epub-reader" src="http://res.cloudinary.com/dgjd4k5na/image/upload/v1507498325/epub_reader_jtozei.png" alt="epub reader">
-                        </div>
-                        <div id="project-show-6">
-                            <img id="free-code-camp-mcr" src="http://res.cloudinary.com/dgjd4k5na/image/upload/v1507498336/free_code_camp_mcr_ttwc1i.png" alt="freecodecamp mcr">
-                        </div>
-                    </section>
-                </section>
+            <article class="empty-space"></article>
+            <article class="project-box flex-center">
+                <button class="project-btn">
+                    <img id="project-4" class="project-img" src="https://image.ibb.co/kgHFmG/epub_readerpng.png" alt="epub reader app">
+                </button>
+            </article>
+            <article class="empty-space"></article>
+            <article class="project-box flex-center">
+                <button class="project-btn">
+                    <img id="project-5" class="project-img" src="https://image.ibb.co/eQsZDw/free_code_camp_mcr.png" alt="free-code-camp Manchester webpage">
+                </button>
+            </article>
+            <article class="empty-space"></article>
+            <article class="project-box flex-center">
+                <button class="project-btn">
+                    <img id="project-6" class="project-img" src="http://i.imgur.com/IL9nJ3d.png" alt="empty project">
+                </button>
+            </article>
+            <article class="empty-space"></article>
+            <article class="project-box flex-center">
+                <button class="project-btn">
+                    <img id="project-7" class="project-img" src="http://i.imgur.com/IL9nJ3d.png" alt="empty project">
+                </button>
+            </article>
+            <article class="empty-space"></article>
+        </section>
+    </section>
+    <section class="progress" alt="progress-section">
+        <article class="title-container flex-center">
+            <div class="title">Progress</div>
+        </article>
+        <article class="graph-area flex-center">
 
-                <section class="mobile-center-2">
-                    <section id="layer-2">
-                        <div id="project-show-7">
+            <div class="graph">
+                <img class="progressive-graph" src="http://res.cloudinary.com/dgjd4k5na/image/upload/v1507731347/bitmap_m8v07y.png" alt="progress-chart">
+                <div class="white-cover"></div>
+            </div>
+        </article>
+        <article class="progress-box">
+            <div class="scroll-box">
+                <section class="scroll-area">
+                    <article id="text-box-1" class="text-area">
+                        <div class="progress-date">[ August - September ]</div>
+                        <div class="initial-description">
+                            <b>Week 17</b> - Using TDD to build a Google Calculator Clone. Learnt more about the underlying app logic from breaking tests. Then solely relying on console.log().
                         </div>
-                        <div id="project-show-8">
+                        <div class="final-description">
+                            <b>Week 20</b> - Currently confident enough to join other devs on their group projects. Realised that reading code, is the hardest part of being a dev.
                         </div>
-                    </section>
-                </section>
-
-                <section class="mobile-center-1">
-                    <section id="layer-1">
-                        <div id="panel-slide-out-5">
-                            <div id="panel-content-5"></div>
+                    </article>
+                    <article id="text-box-2" class="text-area">
+                        <div class="progress-date">[ June - July ]</div>
+                        <div class="initial-description">
+                            <b>Week 9</b> - Clavicle was fitted a titanium plate; delays due to the Manchester Bombings. Make better use of git.
                         </div>
-                        <div id="panel-slide-out-6">
-                            <div id="panel-content-6"></div>
+                        <div class="final-description">
+                            <b>Week 14</b> - Investing time into React + Redux, with it a plethora of new concepts, changing states and props. Added bonus, boosts my understanding, OOP side of JS.
                         </div>
-                    </section>
-                </section>
-
-                <section class="mobile-center-2">
-                    <section id="layer-2">
-                        <div id="panel-slide-out-7">
-                            <div id="panel-content-7"></div>
+                    </article>
+                    <article id="text-box-3" class="text-area">
+                        <div class="progress-date">[ April - May ]</div>
+                        <div class="initial-description">
+                            <b>Week 1</b> - Decided to spend time on completing katas on CodeWars, as I want to get to grips with language fundamentals, as soon as I can
                         </div>
-                        <div id="panel-slide-out-8">
-                            <div id="panel-content-8"></div>
+                        <div class="final-description">
+                            <b>Week 6</b> - Traffic Accident, cracked left-clavicle. In the meantime, shifted my focus on utilizing APIs, fascinated on different ways you can mash-up data.
                         </div>
-                    </section>
+                    </article>
                 </section>
             </div>
-        </div>
-        <div id="progress">
-            <div id="personal-progress">
-                <div id="progress-title">Progress</div>
-                <div id="graph-area">
-                    <div id="graph">
-                        <div id="graph-box-1"></div>
-                        <div id="graph-box-2"></div>
-                        <div id="graph-box-3">
-                        </div>
-                        <div id="graph-box-4">
-                            <div id="cover-box-1"></div>
-                            <div id="inner-triangle-1"></div>
-                        </div>
-                        <div id="graph-box-5"></div>
-                        <div id="graph-box-6"></div>
-                        <div id="graph-box-7"></div>
-                        <div id="graph-box-8"></div>
-                        <div id="graph-box-9">
-                            <div id="cover-box-2"></div>
-                            <div id="inner-triangle-2"></div>
-                        </div>
-                        <div id="graph-box-10"></div>
-                        <div id="graph-box-11"></div>
-                        <div id="graph-box-12"></div>
-                        <div id="white-cover"></div>
-                    </div>
-                </div>
-                <div id="progress-dates">
-                    <div id="progress-box">
-                        <div id="scroll-box">
-                            <div id="progress-update-1" class="progress-update">
-                                <div class="progress-date">[ August - September ]</div>
-                                <div class="initial-description">
-                                    <b>Week 17</b> - Using TDD to build a Google Calculator Clone. Learnt more about the underlying app logic from breaking tests. Then solely relying on console.log().
-                                </div>
-                                <div class="final-description">
-                                    <b>Week 20</b> - Currently confident enough to join other devs on their group projects. Realised that reading code, is the hardest part of being a dev.
-                                </div>
-                            </div>
-                            <div id="progress-update-2" class="progress-update">
-                                <div class="progress-date">[ June - July ]</div>
-                                <div class="initial-description">
-                                    <b>Week 9</b> - Clavicle was fitted a titanium plate; delays due to the Manchester Bombings. Make better use of git.
-                                </div>
-                                <div class="final-description">
-                                    <b>Week 14</b> - Investing time into React + Redux, with it a plethora of new concepts, changing states and props. Added bonus, boosts my understanding, OOP side of JS.
-                                </div>
-                            </div>
-                            <div id="progress-update-3" class="progress-update">
-                                <div class="progress-date">[ April - May ]</div>
-                                <div class="initial-description">
-                                    <b>Week 1</b> - Decided to spend time on completing katas on CodeWars, as I want to get to grips with language fundamentals, as soon as I can
-                                </div>
-                                <div class="final-description">
-                                    <b>Week 6</b> - Traffic Accident, cracked left-clavicle. In the meantime, shifted my focus on utilizing APIs, fascinated on different ways you can mash-up data.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        </article>
+    </section>
+    <section class="profile parallax" alt="profile-section">
+        <article class="white-space"></article>
+        <article class="portfolio flex-center">
+            <div class="profile-img"></div>
+        </article>
+        <article class="white-space"></article>
+        <article class="author-info flex-center">
+            <div class="about-me">
+                <article class="content-margin">
+                    <p>Anthony on his web development journey. Creates living, breathing documents, that every day folks can interact with. Spent a great deal of time honing on his craft, enjoys aiding folks within the tech community with their open source
+                        projects.
+                    </p>
+                </article>
+                <header id="design-title" class="content-margin text-center">
+                    <h3>UX Design Rationale</h3>
+                </header>
+                <article class="content-margin">
+                    <p>Gamification - been wholly fascinated by how, infusing video gaming elements within user-flow. Compels users to gain more information per interaction, and makes for a more intuitive experience.</p>
+                </article>
             </div>
-        </div>
-        <div id="idea-gen" class="parallax">
-            <div id="author-info">
-                <div id="author-img">
-                    <div id="author-img-ring">
-                        <img id="profile-pic" src="data:image/png;base64,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"
-                            alt="profile-pic">
-                    </div>
-                </div>
-                <div id="author-abstract">
-                    <section id="author-content">
-                        <article class="content-margin">
-                            <p>Anthony on his web development journey. Creates living, breathing documents, that every day folks can interact with. Spent a great deal of time honing on his craft, enjoys aiding folks within the tech community with their open
-                                source projects.</p>
-                        </article>
-                        <header id="design-title" class="content-margin text-center">
-                            <h3>UX Design Rationale</h3>
-                        </header>
-                        <article class="content-margin">
-                            <p>Gamification - been wholly fascinated by how, infusing video gaming elements within user-flow. Compels users to gain more information per interaction, and makes for a more intuitive experience.</p>
-                        </article>
-                    </section>
-                </div>
-                <!-- https://vignette.wikia.nocookie.net/vsbattles/images/6/69/PM-001.png/revision/latest?cb=20161127203807 -->
-                <!-- http://static.tumblr.com/0b986bdb046162707c3d749984aade43/oz9xbsu/8FWntx58x/tumblr_static_706t84v0234ss4w0gwocgo44g.png -->
-            </div>
-        </div>
-
-    </div>
+        </article>
+    </section>
+    <footer class="footer">
+        <section id="contact-details" class="details">
+            <section class="contact-info">
+                <header class="contact-name">
+                    CONTACT ME
+                </header>
+                <article class="phone-number">
+                    0161 707 0889
+                </article>
+                <article class="email-info">
+                    anthonytran.dev@gmail.com
+                </article>
+                <article class="address">
+                    <ul>
+                        <li>10 Bindloss Avenue</li>
+                        <li>Eccles Manchester</li>
+                        <li>M30 0DU</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+        <section id="social-details" class=".details">
+            <section id="social-info">
+                <section id="social-layout">
+                    <article id="social-name" class="flex-center">
+                        <div>SOCIAL STUFF</div>
+                    </article>
+                    <article id="social-icons">
+                        <img id="github-icon" class="social-media-icon" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/github-128.png" alt="github icon">
+                        <img id="twitter-icon" class="social-media-icon" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/twitter-128.png" alt="twitter icon">
+                        <img id="linkedIn-icon" class="social-media-icon" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/linkedin-128.png" alt="linked-in icon">
+                        <img id="quora-icon" class="social-media-icon" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/quora-128.png" alt="quora icon">
+                    </article>
+                </section>
+                <section id="event-layout">
+                    <article id="event-name" class="flex-center">
+                        EVENTS VISITED
+                    </article>
+                    <article id="event-icons" class="flex-center">
+                        <div id="icon-centralise">
+                            <img id="instagram-icon" class="social-media-icon" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/instagram-128.png" alt="instagram icon">
+                            <img id="location-events-icon" class="social-media-icon" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/location-128.png" alt="location events visited icon">
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </section>
+    </footer>
 </body>
-
-<footer id="footer">
-    <div id="contacts">
-        <section id="contact-info">
-            <header id="contact-name">
-                CONTACT ME
-            </header>
-            <article id="phone-number">
-                0161 707 0889
-            </article>
-            <article id="email-info">
-                anthonytran.dev@gmail.com
-            </article>
-            <article id="address">
-                <ul>
-                    <li>10 Bindloss Avenue</li>
-                    <li>Eccles Manchester</li>
-                    <li>M30 0DU</li>
-                </ul>
-            </article>
-        </section>
-    </div>
-    <div id="social">
-        <section id="social-info">
-            <section id="social-layout">
-                <article id="social-name">
-                    <div>SOCIAL STUFF</div>
-                </article>
-                <article id="social-icons">
-                    <img id="github-icon" class="social-media-icon" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/github-128.png" alt="github icon">
-                    <img id="twitter-icon" class="social-media-icon" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/twitter-128.png" alt="twitter icon">
-                    <img id="linkedIn-icon" class="social-media-icon" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/linkedin-128.png" alt="linked-in icon">
-                    <img id="quora-icon" class="social-media-icon" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/quora-128.png" alt="quora icon">
-                </article>
-            </section>
-            <section id="event-layout">
-                <article id="event-name">
-                    EVENTS VISITED
-                </article>
-                <article id="event-icons">
-                    <div id="icon-centralise">
-                        <img id="instagram-icon" class="social-media-icon" src="https://cdn1.iconfinder.com/data/icons/smallicons-logotypes/32/instagram-128.png" alt="instagram icon">
-                        <img id="location-events-icon" class="social-media-icon" src="https://cdn4.iconfinder.com/data/icons/miu-flat-social/60/location-128.png" alt="location events visited icon">
-                    </div>
-                </article>
-            </section>
-        </section>
-    </div>
-</footer>
 <script src="index.js"></script>
 
 </html>

@@ -8,7 +8,7 @@
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "node-sass  --watch index.scss -o stylesheets/"
+        "dev": "node-sass  --watch stylesheets/scss/index.scss -o stylesheets/css"
     },
     "repository": {
         "type": "git",

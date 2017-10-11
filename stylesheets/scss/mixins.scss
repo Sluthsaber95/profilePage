@@ -1,0 +1,10 @@
+// MIXINS
+//offsets background, works with .js to give parallax effect
+@mixin parallax {
+    background-position: 50% 0px;
+}
+
+@mixin flex {
+    height: 250px;
+    display: flex;
+}

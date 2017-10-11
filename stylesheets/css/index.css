@@ -1,17 +1,20 @@
 @media screen and (min-width: 280px) {
-  .parallax, body .landing-wrapper, body .profile {
-    background-position: 50% 0px;
-    background-image: url(https://images2.alphacoders.com/633/633149.jpg); }
-  .flex, .flex-start, .flex-center, .flex-end {
+  .flex {
     height: 250px;
     display: flex; }
   .flex-start {
+    height: 250px;
+    display: flex;
     justify-content: flex-start;
     align-items: center; }
   .flex-center {
+    height: 250px;
+    display: flex;
     justify-content: center;
     align-items: center; }
   .flex-end {
+    height: 250px;
+    display: flex;
     justify-content: flex-end; }
   .title-container, body .projects .solo-projects .character-box, body .projects .coop-projects .character-box, body .progress {
     height: 80px;
@@ -26,7 +29,9 @@
     height: 5750px; }
     body .landing-wrapper {
       height: 1000px;
-      width: 100%; }
+      width: 100%;
+      background-image: url(https://images2.alphacoders.com/633/633149.jpg);
+      background-position: 50% 0px; }
       body .landing-wrapper #lander-title {
         height: 10vh;
         width: 90vw;
@@ -98,16 +103,28 @@
         height: 150px; }
     body .progress {
       height: 750px;
-      background-color: #8dbdd8; }
+      background-color: skyblue; }
       body .progress .graph-area {
         height: 335px;
         width: 100%; }
         body .progress .graph-area .graph {
+          position: absolute;
           height: 180px;
           width: 280px;
           border-bottom: 5px solid black;
           border-left: 5px solid black;
           background-color: white; }
+          body .progress .graph-area .graph img {
+            position: absolute;
+            height: 180px;
+            width: 280px; }
+          body .progress .graph-area .graph .white-cover {
+            position: absolute;
+            height: 180px;
+            width: 70px;
+            bottom: 0;
+            right: 0;
+            background-color: white; }
       body .progress .progress-box {
         height: 335px;
         width: 100%; }
@@ -118,11 +135,34 @@
           overflow-x: hidden; }
           body .progress .progress-box .scroll-box .scroll-area {
             height: 600px;
-            width: inherit;
-            background-color: palegoldenrod; }
+            width: inherit; }
+            body .progress .progress-box .scroll-box .scroll-area .text-area {
+              height: 224px;
+              width: 100%; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .space-around-text, body .progress .progress-box .scroll-box .scroll-area .text-area .progress-date, body .progress .progress-box .scroll-box .scroll-area .text-area .initial-description, body .progress .progress-box .scroll-box .scroll-area .text-area .final-description {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.05em;
+                padding-top: 0.5em;
+                margin: 0px 0px 15px 15px; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .progress-date {
+                font-size: 1em; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .initial-description {
+                font-size: 0.9em; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .final-description {
+                font-size: 0.9em; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-1 {
+              color: #ECECEC;
+              background-color: #32586b; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-2 {
+              color: #E6E6E6;
+              background-color: #3c6980; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-3 {
+              color: #585858;
+              background-color: skyblue; }
     body .profile {
       height: 1000px;
-      background-image: url("http://i.imgur.com/0ktqxSg.png"); }
+      background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
+      background-position: 50% 0px; }
       body .profile .portfolio {
         height: 250px;
         width: 100%; }

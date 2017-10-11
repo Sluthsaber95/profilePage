@@ -1,22 +1,5 @@
-//color palette
-$steel-blue:rgb(50, 88, 107);
-$cornflour-blue: rgb(60, 105, 128);
-$sky-blue: rgb(141, 189, 216);
-$silver: rgb(192, 192, 192);
-$lime-green: rgb(64, 227, 156);
-$white: white;
-$black: black;
-$border-black: 5px solid black;
-//fonts
-$roboto:'Roboto',
-sans-serif;
-$roboto-slab: 'Roboto Slab',
-serif;
-$courier: 'Courier',
-sans-serif;
-// measurements
-$full-circle: 50%;
-$shaved-borders: 20px;
+@import 'mixins';
+@import 'const';
 // Mobile screens Portrait {Date: Before and including 2014}
 // iPhone 6, Galaxy S5 
 @media screen and (min-width: 280px) {
@@ -27,27 +10,21 @@ $shaved-borders: 20px;
     //             border-radius: $radius;
     //   }
     //   .box { @include border-radius(10px); }
-    .parallax {
-        //offsets background, works with .js to give parallax effect
-        background-position: 50% 0px;
-        background-image: url(https://images2.alphacoders.com/633/633149.jpg);
-    }
     .flex {
-        height: 250px;
-        display: flex;
+        @include flex;
     }
     .flex-start {
-        @extend .flex;
+        @include flex;
         justify-content: flex-start;
         align-items: center;
     }
     .flex-center {
-        @extend .flex;
+        @include flex;
         justify-content: center;
         align-items: center;
     }
     .flex-end {
-        @extend .flex;
+        @include flex;
         justify-content: flex-end;
     }
     .title-container {
@@ -67,7 +44,8 @@ $shaved-borders: 20px;
         .landing-wrapper {
             height: 1000px;
             width: 100%;
-            @extend .parallax;
+            background-image: url(https://images2.alphacoders.com/633/633149.jpg);
+            @include parallax;
             #lander-title {
                 height: 10vh;
                 width: 90vw;
@@ -170,11 +148,25 @@ $shaved-borders: 20px;
                 height: 335px;
                 width: 100%;
                 .graph {
+                    position: absolute;
                     height: 180px;
                     width: 280px;
                     border-bottom: $border-black;
                     border-left: $border-black;
                     background-color: $white;
+                    img {
+                        position: absolute;
+                        height: 180px;
+                        width: 280px;
+                    }
+                    .white-cover {
+                        position: absolute;
+                        height: 180px;
+                        width: 70px;
+                        bottom: 0;
+                        right: 0;
+                        background-color: $white;
+                    }
                 }
             }
             .progress-box {
@@ -188,15 +180,48 @@ $shaved-borders: 20px;
                     .scroll-area {
                         height: 600px;
                         width: inherit;
-                        background-color: palegoldenrod;
+                        .text-area {
+                            height: 224px;
+                            width: 100%;
+                            .space-around-text {
+                                font-family: $roboto;
+                                letter-spacing: 0.05em;
+                                padding-top: 0.5em;
+                                margin: 0px 0px 15px 15px;
+                            }
+                            .progress-date {
+                                @extend .space-around-text;
+                                font-size: 1em;
+                            }
+                            .initial-description {
+                                @extend .space-around-text;
+                                font-size: 0.9em;
+                            }
+                            .final-description {
+                                @extend .space-around-text;
+                                font-size: 0.9em;
+                            }
+                        }
+                        #text-box-1 {
+                            color: #ECECEC;
+                            background-color: $steel-blue;
+                        }
+                        #text-box-2 {
+                            color: #E6E6E6;
+                            background-color: $cornflour-blue;
+                        }
+                        #text-box-3 {
+                            color: #585858;
+                            background-color: $sky-blue
+                        }
                     }
                 }
             }
         }
         .profile {
             height: 1000px;
-            background-image: url("http://i.imgur.com/0ktqxSg.png");
-            @extend .parallax;
+            background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
+            @include parallax;
             @extend .white-space;
             .portfolio {
                 height: 250px;
