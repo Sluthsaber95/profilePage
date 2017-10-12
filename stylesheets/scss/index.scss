@@ -27,14 +27,6 @@
         @include flex;
         justify-content: flex-end;
     }
-    .title-container {
-        height: 80px;
-        width: 100%;
-        .title {
-            font-family: $roboto-slab;
-            font-size: 1.5em;
-        }
-    }
     .white-space {
         height: 80px;
     }
@@ -48,7 +40,7 @@
             @include parallax;
             #lander-title {
                 height: 10vh;
-                width: 90vw;
+                width: 80vw;
                 align-self: flex-end;
             }
             #img-rick-fall {
@@ -65,7 +57,6 @@
         .projects {
             height: 2500px;
             width: 100%;
-            background-color: $silver;
             .empty-space {
                 height: 25px;
                 width: 100%;
@@ -76,9 +67,14 @@
                 .character-box {
                     height: 320px;
                     width: 100%;
-                    @extend .title-container;
+                    .title-container {
+                        height: 80px;
+                        width: 100%;
+                        @include title
+                    }
                     .img-container {
                         height: 160px;
+                        font-size: 1em;
                         .circle-container {
                             height: 150px;
                             width: 150px;
@@ -96,13 +92,11 @@
                             width: 150px;
                             border-radius: $shaved-borders;
                             font-family: $roboto;
-                            font-size: 1em;
                             background-color: $black;
                             color: $white;
                         }
                     }
                 }
-                @extend .empty-space;
                 .project-box {
                     height: 170px;
                     width: 100%;
@@ -134,7 +128,69 @@
                 }
             }
             .coop-projects {
-                @extend .solo-projects;
+                height: 1125px;
+                .character-box {
+                    height: 320px;
+                    width: 100%;
+                    .title-container {
+                        height: 80px;
+                        width: 100%;
+                        @include title
+                    }
+                    .img-container {
+                        height: 160px;
+                        font-size: 1em;
+                        .circle-container {
+                            height: 150px;
+                            width: 150px;
+                            border: $border-black;
+                            border-radius: $full-circle;
+                            background-color: $white;
+                            #img-morty {
+                                height: inherit;
+                            }
+                        }
+                        .player-tag {
+                            position: absolute;
+                            margin-top: 75px;
+                            height: 45px;
+                            width: 150px;
+                            border-radius: $shaved-borders;
+                            font-family: $roboto;
+                            background-color: $black;
+                            color: $white;
+                        }
+                    }
+                }
+                .project-box {
+                    height: 170px;
+                    width: 100%;
+                    button {
+                        text-align: start;
+                    }
+                    .project-btn {
+                        position: absolute;
+                        padding: 0;
+                        height: 160px;
+                        width: 280px;
+                        border: $border-black;
+                        background-color: $white;
+                        .project-img {
+                            // position: absolute;
+                            height: 150px;
+                            width: 270px;
+                        }
+                        .terminal-text {
+                            font-family: $courier;
+                            font-size: 0.68em;
+                            margin: 4px 0px 4px 5px;
+                            color: $lime-green;
+                        }
+                        a {
+                            color: $lime-green;
+                        }
+                    }
+                }
                 #img-rick-morty {
                     height: 150px;
                 }
@@ -143,7 +199,11 @@
         .progress {
             height: 750px;
             background-color: $sky-blue;
-            @extend .title-container;
+            .title-container {
+                height: 80px;
+                width: 100%;
+                @include title;
+            }
             .graph-area {
                 height: 335px;
                 width: 100%;
@@ -183,22 +243,16 @@
                         .text-area {
                             height: 224px;
                             width: 100%;
-                            .space-around-text {
-                                font-family: $roboto;
-                                letter-spacing: 0.05em;
-                                padding-top: 0.5em;
-                                margin: 0px 0px 15px 15px;
-                            }
                             .progress-date {
-                                @extend .space-around-text;
+                                @include space-around-text;
                                 font-size: 1em;
                             }
                             .initial-description {
-                                @extend .space-around-text;
+                                @include space-around-text;
                                 font-size: 0.9em;
                             }
                             .final-description {
-                                @extend .space-around-text;
+                                @include space-around-text;
                                 font-size: 0.9em;
                             }
                         }
@@ -222,7 +276,10 @@
             height: 1000px;
             background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
             @include parallax;
-            @extend .white-space;
+            .white-space {
+                height: 80px;
+                width: 100%;
+            }
             .portfolio {
                 height: 250px;
                 width: 100%;
@@ -242,17 +299,18 @@
                     background-color: $white;
                     font-family: 'Roboto', sans-serif;
                     background-color: white;
-                    .content-margin {
-                        letter-spacing: 0.09em;
-                        line-height: 1.5em;
-                        margin: 5%;
-                        margin-top: 10%;
+                    .content {
+                        height: 40%;
+                        width: 100%;
+                        .content-margin {
+                            letter-spacing: 0.09em;
+                            line-height: 1.5em;
+                            margin: 5%;
+                        }
                     }
-                    .text-center {
-                        text-align: center;
-                    }
-                    #design-title {
-                        margin-top: 10%;
+                    .content-title {
+                        height: 20%;
+                        width: 100%;
                     }
                 }
             }
@@ -315,7 +373,10 @@
             }
         }
         #social-details {
-            @extend .details;
+            height: 250px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
             background-color: $cornflour-blue;
             #social-info {
                 width: 250px;
@@ -331,7 +392,6 @@
                         letter-spacing: 0.12em;
                         color: white;
                     }
-                    @extend .social-media-icon;
                     #social-icons {
                         width: 250px;
                         height: 62.5px;
@@ -366,17 +426,908 @@
     }
 }
 
-// Phablets and Tablets
+// Modern Phablets and Tablets {Date: Late 2017}
 @media screen and (min-width: 720px) {
+    // @mixin border-radius($radius) {
+    //     -webkit-border-radius: $radius;
+    //        -moz-border-radius: $radius;
+    //         -ms-border-radius: $radius;
+    //             border-radius: $radius;
+    //   }
+    //   .box { @include border-radius(10px); }
+    .flex {
+        @include flex;
+    }
+    .flex-start {
+        @include flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .flex-center {
+        @include flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-end {
+        @include flex;
+        justify-content: flex-end;
+    }
+    .white-space {
+        height: 80px;
+    }
+    .overflow-show {
+        overflow: visible;
+    }
     body {
-        background-color: lightgreen;
+        margin: 0;
+        height: 5250px;
+        .landing-wrapper {
+            height: 1000px;
+            width: 100%;
+            background-image: url(https://images2.alphacoders.com/633/633149.jpg);
+            @include parallax;
+            #lander-title {
+                height: 10vh;
+                width: 90vw;
+                align-self: flex-end;
+            }
+            #img-rick-fall {
+                height: 350px;
+            }
+            #img-cromulon {
+                height: 350px;
+                margin-right: 20px;
+                transform: scaleX(-1);
+                float: right;
+                align-self: end;
+            }
+        }
+        .projects {
+            height: 2250px;
+            width: 100%;
+            .empty-space {
+                height: 25px;
+                width: 100%;
+                background-color: $white;
+            }
+            .solo-projects {
+                height: 1125px;
+                .character-box {
+                    height: 320px;
+                    width: 100%;
+                    .title-container {
+                        height: 120px;
+                        width: 100%;
+                        @include title
+                    }
+                    .img-container {
+                        height: 160px;
+                        font-size: 1em;
+                        .circle-container {
+                            height: 150px;
+                            width: 150px;
+                            border: $border-black;
+                            border-radius: $full-circle;
+                            background-color: $white;
+                            #img-morty {
+                                height: inherit;
+                            }
+                        }
+                        .player-tag {
+                            position: absolute;
+                            margin-top: 75px;
+                            height: 45px;
+                            width: 150px;
+                            border-radius: $shaved-borders;
+                            font-family: $roboto;
+                            background-color: $black;
+                            color: $white;
+                        }
+                    }
+                }
+                .responsive-box {
+                    height: 300px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    // background-color: $silver;
+                    .empty-space {
+                        height: 0;
+                        width: 0;
+                    }
+                    .project-box {
+                        height: 210px;
+                        width: 360px;
+                        button {
+                            text-align: start;
+                        }
+                        .project-btn {
+                            position: absolute;
+                            padding: 0;
+                            height: 200px;
+                            width: 350px;
+                            border: $border-black;
+                            background-color: $white;
+                            .project-img {
+                                // position: absolute;
+                                height: 190px;
+                                width: 340px;
+                            }
+                            .terminal-text {
+                                font-family: $courier;
+                                font-size: 0.68em;
+                                margin: 4px 0px 4px 5px;
+                                color: $lime-green;
+                            }
+                            a {
+                                color: $lime-green;
+                            }
+                        }
+                    }
+                }
+            }
+            .coop-projects {
+                height: 1125px;
+                .character-box {
+                    height: 320px;
+                    width: 100%;
+                    #img-rick-morty {
+                        height: 150px;
+                    }
+                    .title-container {
+                        height: 80px;
+                        width: 100%;
+                        @include title
+                    }
+                    .img-container {
+                        height: 160px;
+                        font-size: 1em;
+                        .circle-container {
+                            height: 150px;
+                            width: 150px;
+                            border: $border-black;
+                            border-radius: $full-circle;
+                            background-color: $white;
+                            #img-morty {
+                                height: inherit;
+                            }
+                        }
+                        .player-tag {
+                            position: absolute;
+                            margin-top: 75px;
+                            height: 45px;
+                            width: 150px;
+                            border-radius: $shaved-borders;
+                            font-family: $roboto;
+                            background-color: $black;
+                            color: $white;
+                        }
+                    }
+                }
+                .responsive-box {
+                    height: 300px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    .empty-space {
+                        height: 0;
+                        width: 0;
+                    }
+                    .project-box {
+                        height: 210px;
+                        width: 360px;
+                        button {
+                            text-align: start;
+                        }
+                        .project-btn {
+                            position: absolute;
+                            padding: 0;
+                            height: 200px;
+                            width: 350px;
+                            border: $border-black;
+                            background-color: $white;
+                            .project-img {
+                                // position: absolute;
+                                height: 190px;
+                                width: 340px;
+                            }
+                            .terminal-text {
+                                font-family: $courier;
+                                font-size: 0.68em;
+                                margin: 4px 0px 4px 5px;
+                                color: $lime-green;
+                            }
+                            a {
+                                color: $lime-green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .progress {
+            height: 1000px;
+            background-color: $sky-blue;
+            .title-container {
+                height: 120px;
+                width: 100%;
+                @include title;
+            }
+            .graph-area {
+                height: 490px; // 560 x 320 - 155
+                width: 100%;
+                .graph {
+                    position: absolute;
+                    height: 320px;
+                    width: 560px;
+                    border-bottom: $border-black;
+                    border-left: $border-black;
+                    background-color: $white;
+                    img {
+                        position: absolute;
+                        height: 320px;
+                        width: 560px;
+                    }
+                    .white-cover {
+                        position: absolute;
+                        height: 320px;
+                        width: 140px;
+                        bottom: 0;
+                        right: 0;
+                        background-color: $white;
+                    }
+                }
+            } // 560 x 320 , 320 x 180
+            .progress-box {
+                height: 224px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .scroll-box {
+                    height: 224px;
+                    width: 560px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    .scroll-area {
+                        height: 600px;
+                        width: inherit;
+                        .text-area {
+                            height: 224px;
+                            width: 100%;
+                            .progress-date {
+                                @include space-around-text;
+                                font-size: 1em;
+                            }
+                            .initial-description {
+                                @include space-around-text;
+                                font-size: 0.9em;
+                            }
+                            .final-description {
+                                @include space-around-text;
+                                font-size: 0.9em;
+                            }
+                        }
+                        #text-box-1 {
+                            color: #ECECEC;
+                            background-color: $steel-blue;
+                        }
+                        #text-box-2 {
+                            color: #E6E6E6;
+                            background-color: $cornflour-blue;
+                        }
+                        #text-box-3 {
+                            color: #585858;
+                            background-color: $sky-blue
+                        }
+                    }
+                }
+            }
+        }
+        .profile {
+            height: 1000px;
+            background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
+            @include parallax;
+            .white-space {
+                height: 80px;
+                width: 100%;
+            }
+            .portfolio {
+                height: 250px;
+                width: 100%;
+                .profile-img {
+                    height: inherit;
+                    width: 250px;
+                    border-radius: $full-circle;
+                    background-color: $white;
+                }
+            }
+            .author-info {
+                height: 500px;
+                width: 100%;
+                .about-me {
+                    height: 500px;
+                    width: 100%;
+                    background-color: $white;
+                    font-family: 'Roboto', sans-serif;
+                    background-color: white;
+                    .content {
+                        height: 40%;
+                        width: 100%;
+                        .content-margin {
+                            letter-spacing: 0.09em;
+                            line-height: 1.5em;
+                            margin: 1em 10% 1em 10%;
+                        }
+                    }
+                    .content-title {
+                        height: 20%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        height: 250px;
+        width: 100%;
+        display: flex;
+        .social-media-icon {
+            height: 40px;
+            width: 40px;
+        }
+        .details {
+            height: 250px;
+            width: 50%;
+            background-color: $steel-blue;
+            display: flex;
+            justify-content: space-around;
+            .contact-info {
+                height: 250px;
+                width: 250px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.9em;
+                text-align: center;
+                .contact-name {
+                    margin-top: 10%;
+                    color: white;
+                    font-family: 'Roboto Slab', serif;
+                    font-size: 1.1em;
+                    letter-spacing: 0.12em;
+                }
+            }
+            .phone-number {
+                margin-top: 10px;
+                height: 25px;
+                width: 100%;
+                letter-spacing: 0.12em;
+                color: rgb(235, 235, 235);
+            }
+            .email-info {
+                margin-top: 20px;
+                height: 25px;
+                width: 100%;
+                letter-spacing: 0.12em;
+                color: rgb(211, 211, 211);
+            }
+            .address {
+                width: 100%;
+                height: 90px;
+                letter-spacing: 0.12em;
+                color: rgb(235, 235, 235);
+                ul {
+                    list-style-type: none;
+                    padding-left: 20px;
+                    li {
+                        list-style-type: none;
+                        padding: 2.5px 0px 2.5px 0px
+                    }
+                }
+            }
+        }
+        #social-details {
+            height: 250px;
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            background-color: $cornflour-blue;
+            #social-info {
+                width: 250px;
+                height: 250px;
+                #social-layout {
+                    width: inherit;
+                    height: 125px;
+                    #social-name {
+                        width: inherit;
+                        height: 62.5px;
+                        font-family: $roboto-slab;
+                        font-size: 1.1em;
+                        letter-spacing: 0.12em;
+                        color: white;
+                    }
+                    #social-icons {
+                        width: 250px;
+                        height: 62.5px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                }
+                #event-layout {
+                    width: 250px;
+                    height: 125px;
+                }
+                #event-name {
+                    width: 250px;
+                    height: 62.5px;
+                    color: $white;
+                    font-family: $roboto-slab;
+                    font-size: 1.1em;
+                    letter-spacing: 0.12em;
+                }
+                #event-icons {
+                    width: 250px;
+                    height: 62.5px;
+                }
+                #icon-centralise {
+                    width: 150px;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
     }
 }
 
 // Displays + High Resolution Tablets
 @media screen and (min-width: 1366px) {
+    // @mixin border-radius($radius) {
+    //     -webkit-border-radius: $radius;
+    //        -moz-border-radius: $radius;
+    //         -ms-border-radius: $radius;
+    //             border-radius: $radius;
+    //   }
+    //   .box { @include border-radius(10px); }
+    .flex {
+        @include flex;
+    }
+    .flex-start {
+        @include flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .flex-center {
+        @include flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flex-end {
+        @include flex;
+        justify-content: flex-end;
+    }
+    .white-space {
+        height: 80px;
+    }
+    .overflow-show {
+        overflow: visible;
+    }
     body {
-        background-color: lightgreen;
+        margin: 0;
+        height: 5250px;
+        .landing-wrapper {
+            height: 1000px;
+            width: 100%;
+            background-image: url(https://images2.alphacoders.com/633/633149.jpg);
+            @include parallax;
+            #lander-title {
+                height: 90px;
+                width: 1000px;
+                align-self: flex-end;
+            }
+            #img-rick-fall {
+                height: 350px;
+            }
+            #img-cromulon {
+                height: 350px;
+                margin-right: 20px;
+                transform: scaleX(-1);
+                float: right;
+                align-self: end;
+            }
+        }
+        .projects {
+            height: 2250px;
+            width: 100%;
+            .empty-space {
+                height: 25px;
+                width: 100%;
+                background-color: $white;
+            }
+            .solo-projects {
+                height: 1125px;
+                .character-box {
+                    height: 320px;
+                    width: 100%;
+                    .title-container {
+                        height: 120px;
+                        width: 100%;
+                        @include title
+                    }
+                    .img-container {
+                        height: 160px;
+                        font-size: 1em;
+                        .circle-container {
+                            height: 150px;
+                            width: 150px;
+                            border: $border-black;
+                            border-radius: $full-circle;
+                            background-color: $white;
+                            #img-morty {
+                                height: inherit;
+                            }
+                        }
+                        .player-tag {
+                            position: absolute;
+                            margin-top: 75px;
+                            height: 45px;
+                            width: 150px;
+                            border-radius: $shaved-borders;
+                            font-family: $roboto;
+                            background-color: $black;
+                            color: $white;
+                        }
+                    }
+                }
+                .responsive-box {
+                    height: 350px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    // background-color: $silver;
+                    .empty-space {
+                        height: 0;
+                        width: 0;
+                    }
+                    .project-box {
+                        height: 310px;
+                        width: 535px;
+                        button {
+                            text-align: start;
+                        }
+                        .project-btn {
+                            position: absolute;
+                            padding: 0;
+                            height: 300px;
+                            width: 525px;
+                            border: $border-black;
+                            background-color: $white;
+                            .project-img {
+                                // position: absolute;
+                                height: 290px;
+                                width: 515px;
+                            }
+                            .terminal-text {
+                                font-family: $courier;
+                                font-size: 0.68em;
+                                margin: 4px 0px 4px 5px;
+                                color: $lime-green;
+                            }
+                            a {
+                                color: $lime-green;
+                            }
+                        }
+                    }
+                }
+            }
+            .coop-projects {
+                height: 1125px;
+                .character-box {
+                    height: 320px;
+                    width: 100%;
+                    #img-rick-morty {
+                        height: 150px;
+                    }
+                    .title-container {
+                        height: 80px;
+                        width: 100%;
+                        @include title
+                    }
+                    .img-container {
+                        height: 160px;
+                        font-size: 1em;
+                        .circle-container {
+                            height: 150px;
+                            width: 150px;
+                            border: $border-black;
+                            border-radius: $full-circle;
+                            background-color: $white;
+                            #img-morty {
+                                height: inherit;
+                            }
+                        }
+                        .player-tag {
+                            position: absolute;
+                            margin-top: 75px;
+                            height: 45px;
+                            width: 150px;
+                            border-radius: $shaved-borders;
+                            font-family: $roboto;
+                            background-color: $black;
+                            color: $white;
+                        }
+                    }
+                }
+                .responsive-box {
+                    height: 350px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    // background-color: $silver;
+                    .empty-space {
+                        height: 0;
+                        width: 0;
+                    }
+                    .project-box {
+                        height: 310px;
+                        width: 535px;
+                        button {
+                            text-align: start;
+                        }
+                        .project-btn {
+                            position: absolute;
+                            padding: 0;
+                            height: 300px;
+                            width: 525px;
+                            border: $border-black;
+                            background-color: $white;
+                            .project-img {
+                                // position: absolute;
+                                height: 290px;
+                                width: 515px;
+                            }
+                            .terminal-text {
+                                font-family: $courier;
+                                font-size: 0.68em;
+                                margin: 4px 0px 4px 5px;
+                                color: $lime-green;
+                            }
+                            a {
+                                color: $lime-green;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .progress {
+            height: 1000px;
+            background-color: $sky-blue;
+            .title-container {
+                height: 120px;
+                width: 100%;
+                @include title;
+            }
+            .graph-area {
+                height: 490px; // 560 x 320 - 155
+                width: 100%;
+                .graph {
+                    position: absolute;
+                    height: 320px;
+                    width: 560px;
+                    border-bottom: $border-black;
+                    border-left: $border-black;
+                    background-color: $white;
+                    img {
+                        position: absolute;
+                        height: 320px;
+                        width: 560px;
+                    }
+                    .white-cover {
+                        position: absolute;
+                        height: 320px;
+                        width: 140px;
+                        bottom: 0;
+                        right: 0;
+                        background-color: $white;
+                    }
+                }
+            } // 560 x 320 , 320 x 180
+            .progress-box {
+                height: 224px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                .scroll-box {
+                    height: 224px;
+                    width: 560px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    .scroll-area {
+                        height: 600px;
+                        width: inherit;
+                        .text-area {
+                            height: 224px;
+                            width: 100%;
+                            .progress-date {
+                                @include space-around-text;
+                                font-size: 1em;
+                            }
+                            .initial-description {
+                                @include space-around-text;
+                                font-size: 0.9em;
+                            }
+                            .final-description {
+                                @include space-around-text;
+                                font-size: 0.9em;
+                            }
+                        }
+                        #text-box-1 {
+                            color: #ECECEC;
+                            background-color: $steel-blue;
+                        }
+                        #text-box-2 {
+                            color: #E6E6E6;
+                            background-color: $cornflour-blue;
+                        }
+                        #text-box-3 {
+                            color: #585858;
+                            background-color: $sky-blue
+                        }
+                    }
+                }
+            }
+        }
+        .profile {
+            height: 1000px;
+            background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
+            @include parallax;
+            .white-space {
+                height: 80px;
+                width: 100%;
+            }
+            .portfolio {
+                height: 250px;
+                width: 100%;
+                .profile-img {
+                    height: inherit;
+                    width: 250px;
+                    border-radius: $full-circle;
+                    background-color: $white;
+                }
+            }
+            .author-info {
+                height: 500px;
+                width: 100%;
+                .about-me {
+                    height: 500px;
+                    width: 100%;
+                    background-color: $white;
+                    font-family: 'Roboto', sans-serif;
+                    background-color: white;
+                    .content {
+                        height: 40%;
+                        width: 100%;
+                        .content-margin {
+                            letter-spacing: 0.09em;
+                            line-height: 1.5em;
+                            width: 1092px;
+                        }
+                    }
+                    .content-title {
+                        height: 20%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        height: 250px;
+        width: 100%;
+        display: flex;
+        .social-media-icon {
+            height: 40px;
+            width: 40px;
+        }
+        .details {
+            height: 250px;
+            width: 50%;
+            background-color: $steel-blue;
+            display: flex;
+            justify-content: space-around;
+            .contact-info {
+                height: 250px;
+                width: 250px;
+                font-family: 'Roboto', sans-serif;
+                font-size: 0.9em;
+                text-align: center;
+                .contact-name {
+                    margin-top: 10%;
+                    color: white;
+                    font-family: 'Roboto Slab', serif;
+                    font-size: 1.1em;
+                    letter-spacing: 0.12em;
+                }
+            }
+            .phone-number {
+                margin-top: 10px;
+                height: 25px;
+                width: 100%;
+                letter-spacing: 0.12em;
+                color: rgb(235, 235, 235);
+            }
+            .email-info {
+                margin-top: 20px;
+                height: 25px;
+                width: 100%;
+                letter-spacing: 0.12em;
+                color: rgb(211, 211, 211);
+            }
+            .address {
+                width: 100%;
+                height: 90px;
+                letter-spacing: 0.12em;
+                color: rgb(235, 235, 235);
+                ul {
+                    list-style-type: none;
+                    padding-left: 20px;
+                    li {
+                        list-style-type: none;
+                        padding: 2.5px 0px 2.5px 0px
+                    }
+                }
+            }
+        }
+        #social-details {
+            height: 250px;
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            background-color: $cornflour-blue;
+            #social-info {
+                width: 250px;
+                height: 250px;
+                #social-layout {
+                    width: inherit;
+                    height: 125px;
+                    #social-name {
+                        width: inherit;
+                        height: 62.5px;
+                        font-family: $roboto-slab;
+                        font-size: 1.1em;
+                        letter-spacing: 0.12em;
+                        color: white;
+                    }
+                    #social-icons {
+                        width: 250px;
+                        height: 62.5px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                    }
+                }
+                #event-layout {
+                    width: 250px;
+                    height: 125px;
+                }
+                #event-name {
+                    width: 250px;
+                    height: 62.5px;
+                    color: $white;
+                    font-family: $roboto-slab;
+                    font-size: 1.1em;
+                    letter-spacing: 0.12em;
+                }
+                #event-icons {
+                    width: 250px;
+                    height: 62.5px;
+                }
+                #icon-centralise {
+                    width: 150px;
+                    display: flex;
+                    justify-content: space-around;
+                }
+            }
+        }
     }
 }
 

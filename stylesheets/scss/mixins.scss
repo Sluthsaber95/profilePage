@@ -8,3 +8,15 @@
     height: 250px;
     display: flex;
 }
+
+@mixin title {
+    font-family: $roboto-slab;
+    font-size: 1.5em;
+}
+
+@mixin space-around-text {
+    font-family: $roboto;
+    letter-spacing: 0.05em;
+    padding-top: 0.5em;
+    margin: 0px 0px 15px 15px;
+}
