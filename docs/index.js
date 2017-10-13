@@ -48,12 +48,6 @@ projects[0].addEventListener('click', function(el) {
         div.id = "terminal-text-" + classIndex;
         div.style.position = "absolute";
 
-        //cycles throught terminal messages and inserts div into parent div
-        // <div id="terminal-text-[index]">
-        // + <div class="terminal-text">${terminalMessage[0]}</div> 
-        // ...
-        //   <div class="terminal-text">${terminalMessage[9]}</div> 
-        //</div>
         for (var i = 0; i < 10; i++) {
             div.innerHTML += "<div class=\"terminal-text\">" + terminalMessage[i] + "</div>";
         }
