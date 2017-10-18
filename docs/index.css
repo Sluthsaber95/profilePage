@@ -1,1516 +1,1134 @@
 @media screen and (min-width: 280px) {
-    .flex {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .flex-start {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .flex-center {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .flex-end {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-    }
-    .white-space {
-        height: 80px;
-    }
-    body {
-        margin: 0;
-        height: 5750px;
-    }
+  .flex {
+    height: 250px;
+    display: flex; }
+  .flex-start {
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .flex-center {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .flex-end {
+    height: 250px;
+    display: flex;
+    justify-content: flex-end; }
+  .white-space {
+    height: 80px; }
+  body {
+    margin: 0;
+    height: 5750px; }
     body .landing-wrapper {
-        height: 1000px;
-        width: 100%;
-        background-image: url(https://images2.alphacoders.com/633/633149.jpg);
-        background-position: 50% 0px;
-    }
-    body .landing-wrapper #lander-title {
+      height: 1000px;
+      width: 100%;
+      background-image: url(https://images2.alphacoders.com/633/633149.jpg);
+      background-position: 50% 0px; }
+      body .landing-wrapper #lander-title {
         height: 10vh;
         width: 80vw;
-        -ms-flex-item-align: end;
-        align-self: flex-end;
-    }
-    body .landing-wrapper #img-rick-fall {
-        height: 200px;
-    }
-    body .landing-wrapper #img-cromulon {
+        align-self: flex-end; }
+      body .landing-wrapper #img-rick-fall {
+        height: 200px; }
+      body .landing-wrapper #img-cromulon {
         height: 150px;
         margin-right: 20px;
-        -webkit-transform: scaleX(-1);
-        -ms-transform: scaleX(-1);
         transform: scaleX(-1);
         float: right;
-        -ms-flex-item-align: end;
-        align-self: end;
-    }
+        align-self: end; }
     body .projects {
-        height: 2500px;
-        width: 100%;
-    }
-    body .projects .empty-space {
+      height: 2500px;
+      width: 100%; }
+      body .projects .empty-space {
         height: 25px;
         width: 100%;
-        background-color: white;
-    }
-    body .projects .solo-projects {
-        height: 1125px;
-    }
-    body .projects .solo-projects .character-box {
-        height: 320px;
-        width: 100%;
-    }
-    body .projects .solo-projects .character-box .title-container {
-        height: 80px;
-        width: 100%;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.5em;
-    }
-    body .projects .solo-projects .character-box .img-container {
-        height: 160px;
-        font-size: 1em;
-    }
-    body .projects .solo-projects .character-box .img-container .circle-container {
-        height: 150px;
-        width: 150px;
-        border: 5px solid black;
-        border-radius: 50%;
-        background-color: white;
-    }
-    body .projects .solo-projects .character-box .img-container .circle-container #img-morty {
-        height: inherit;
-    }
-    body .projects .solo-projects .character-box .img-container .player-tag {
-        position: absolute;
-        margin-top: 75px;
-        height: 45px;
-        width: 150px;
-        border-radius: 20px;
-        font-family: "Roboto", sans-serif;
-        background-color: black;
-        color: white;
-    }
-    body .projects .solo-projects .project-box {
-        height: 170px;
-        width: 100%;
-    }
-    body .projects .solo-projects .project-box button {
-        text-align: start;
-    }
-    body .projects .solo-projects .project-box .project-btn {
-        position: absolute;
-        padding: 0;
-        height: 160px;
-        width: 280px;
-        border: 5px solid black;
-        background-color: white;
-    }
-    body .projects .solo-projects .project-box .project-btn .project-img {
-        height: 150px;
-        width: 270px;
-    }
-    body .projects .solo-projects .project-box .project-btn .terminal-text {
-        font-family: "Courier", sans-serif;
-        font-size: 0.68em;
-        margin: 4px 0px 4px 5px;
-        color: #40e39c;
-    }
-    body .projects .solo-projects .project-box .project-btn a {
-        color: #40e39c;
-    }
-    body .projects .coop-projects {
-        height: 1125px;
-    }
-    body .projects .coop-projects .character-box {
-        height: 320px;
-        width: 100%;
-    }
-    body .projects .coop-projects .character-box .title-container {
-        height: 80px;
-        width: 100%;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.5em;
-    }
-    body .projects .coop-projects .character-box .img-container {
-        height: 160px;
-        font-size: 1em;
-    }
-    body .projects .coop-projects .character-box .img-container .circle-container {
-        height: 150px;
-        width: 150px;
-        border: 5px solid black;
-        border-radius: 50%;
-        background-color: white;
-    }
-    body .projects .coop-projects .character-box .img-container .circle-container #img-morty {
-        height: inherit;
-    }
-    body .projects .coop-projects .character-box .img-container .player-tag {
-        position: absolute;
-        margin-top: 75px;
-        height: 45px;
-        width: 150px;
-        border-radius: 20px;
-        font-family: "Roboto", sans-serif;
-        background-color: black;
-        color: white;
-    }
-    body .projects .coop-projects .project-box {
-        height: 170px;
-        width: 100%;
-    }
-    body .projects .coop-projects .project-box button {
-        text-align: start;
-    }
-    body .projects .coop-projects .project-box .project-btn {
-        position: absolute;
-        padding: 0;
-        height: 160px;
-        width: 280px;
-        border: 5px solid black;
-        background-color: white;
-    }
-    body .projects .coop-projects .project-box .project-btn .project-img {
-        height: 150px;
-        width: 270px;
-    }
-    body .projects .coop-projects .project-box .project-btn .terminal-text {
-        font-family: "Courier", sans-serif;
-        font-size: 0.68em;
-        margin: 4px 0px 4px 5px;
-        color: #40e39c;
-    }
-    body .projects .coop-projects .project-box .project-btn a {
-        color: #40e39c;
-    }
-    body .projects .coop-projects #img-rick-morty {
-        height: 150px;
-    }
+        background-color: white; }
+      body .projects .solo-projects {
+        height: 1125px; }
+        body .projects .solo-projects .character-box {
+          height: 320px;
+          width: 100%; }
+          body .projects .solo-projects .character-box .title-container {
+            height: 80px;
+            width: 100%;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.5em; }
+          body .projects .solo-projects .character-box .img-container {
+            height: 160px;
+            font-size: 1em; }
+            body .projects .solo-projects .character-box .img-container .circle-container {
+              height: 150px;
+              width: 150px;
+              border: 5px solid black;
+              border-radius: 50%;
+              background-color: white; }
+              body .projects .solo-projects .character-box .img-container .circle-container #img-morty {
+                height: inherit; }
+            body .projects .solo-projects .character-box .img-container .player-tag {
+              position: absolute;
+              margin-top: 75px;
+              height: 45px;
+              width: 150px;
+              border-radius: 20px;
+              font-family: "Roboto", sans-serif;
+              background-color: black;
+              color: white; }
+        body .projects .solo-projects .project-box {
+          height: 170px;
+          width: 100%; }
+          body .projects .solo-projects .project-box button {
+            text-align: start; }
+          body .projects .solo-projects .project-box .project-btn {
+            position: absolute;
+            padding: 0;
+            height: 160px;
+            width: 280px;
+            border: 5px solid black;
+            background-color: white; }
+            body .projects .solo-projects .project-box .project-btn .project-img {
+              position: absolute;
+              top: 0;
+              height: 150px;
+              width: 270px; }
+            body .projects .solo-projects .project-box .project-btn .company-icon {
+              height: 36px;
+              position: absolute;
+              top: 5px;
+              left: 5px; }
+            body .projects .solo-projects .project-box .project-btn #fcc-icon {
+              height: 40px; }
+            body .projects .solo-projects .project-box .project-btn #youtube-icon {
+              top: 0;
+              height: 40px; }
+            body .projects .solo-projects .project-box .project-btn .terminal-text {
+              font-family: "Courier", sans-serif;
+              font-size: 0.68em;
+              margin: 4px 0px 4px 5px;
+              color: #40e39c; }
+            body .projects .solo-projects .project-box .project-btn a {
+              color: #40e39c; }
+      body .projects .coop-projects {
+        height: 1125px; }
+        body .projects .coop-projects .character-box {
+          height: 320px;
+          width: 100%; }
+          body .projects .coop-projects .character-box .title-container {
+            height: 80px;
+            width: 100%;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.5em; }
+          body .projects .coop-projects .character-box .img-container {
+            height: 160px;
+            font-size: 1em; }
+            body .projects .coop-projects .character-box .img-container .circle-container {
+              height: 150px;
+              width: 150px;
+              border: 5px solid black;
+              border-radius: 50%;
+              background-color: white; }
+              body .projects .coop-projects .character-box .img-container .circle-container #img-morty {
+                height: inherit; }
+            body .projects .coop-projects .character-box .img-container .player-tag {
+              position: absolute;
+              margin-top: 75px;
+              height: 45px;
+              width: 150px;
+              border-radius: 20px;
+              font-family: "Roboto", sans-serif;
+              background-color: black;
+              color: white; }
+        body .projects .coop-projects .project-box {
+          height: 170px;
+          width: 100%; }
+          body .projects .coop-projects .project-box button {
+            text-align: start; }
+          body .projects .coop-projects .project-box .project-btn {
+            position: absolute;
+            padding: 0;
+            height: 160px;
+            width: 280px;
+            border: 5px solid black;
+            background-color: white; }
+            body .projects .coop-projects .project-box .project-btn .project-img {
+              height: 150px;
+              width: 270px; }
+            body .projects .coop-projects .project-box .project-btn .terminal-text {
+              font-family: "Courier", sans-serif;
+              font-size: 0.68em;
+              margin: 4px 0px 4px 5px;
+              color: #40e39c; }
+            body .projects .coop-projects .project-box .project-btn a {
+              color: #40e39c; }
+        body .projects .coop-projects #img-rick-morty {
+          height: 150px; }
     body .progress {
-        height: 750px;
-        background-color: skyblue;
-    }
-    body .progress .title-container {
+      height: 750px;
+      background-color: skyblue; }
+      body .progress .title-container {
         height: 80px;
         width: 100%;
         font-family: "Roboto Slab", serif;
-        font-size: 1.5em;
-    }
-    body .progress .graph-area {
+        font-size: 1.5em; }
+      body .progress .graph-area {
         height: 335px;
-        width: 100%;
-    }
-    body .progress .graph-area .graph {
-        position: absolute;
-        height: 180px;
-        width: 280px;
-        border-bottom: 5px solid black;
-        border-left: 5px solid black;
-        background-color: white;
-    }
-    body .progress .graph-area .graph img {
-        position: absolute;
-        height: 180px;
-        width: 280px;
-    }
-    body .progress .graph-area .graph .white-cover {
-        position: absolute;
-        height: 180px;
-        width: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: white;
-    }
-    body .progress .progress-box {
+        width: 100%; }
+        body .progress .graph-area .graph {
+          position: absolute;
+          height: 180px;
+          width: 280px;
+          border-bottom: 5px solid black;
+          border-left: 5px solid black;
+          background-color: white; }
+          body .progress .graph-area .graph img {
+            position: absolute;
+            height: 180px;
+            width: 280px; }
+          body .progress .graph-area .graph .white-cover {
+            position: absolute;
+            height: 180px;
+            width: 70px;
+            bottom: 0;
+            right: 0;
+            background-color: white; }
+      body .progress .progress-box {
         height: 335px;
-        width: 100%;
-    }
-    body .progress .progress-box .scroll-box {
-        height: 224px;
-        width: inherit;
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-    body .progress .progress-box .scroll-box .scroll-area {
-        height: 600px;
-        width: inherit;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area {
-        height: 224px;
-        width: 100%;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area .progress-date {
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 0.05em;
-        padding-top: 0.5em;
-        margin: 0px 0px 15px 15px;
-        font-size: 1em;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area .initial-description {
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 0.05em;
-        padding-top: 0.5em;
-        margin: 0px 0px 15px 15px;
-        font-size: 0.9em;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area .final-description {
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 0.05em;
-        padding-top: 0.5em;
-        margin: 0px 0px 15px 15px;
-        font-size: 0.9em;
-    }
-    body .progress .progress-box .scroll-box .scroll-area #text-box-1 {
-        color: #ECECEC;
-        background-color: #32586b;
-    }
-    body .progress .progress-box .scroll-box .scroll-area #text-box-2 {
-        color: #E6E6E6;
-        background-color: #3c6980;
-    }
-    body .progress .progress-box .scroll-box .scroll-area #text-box-3 {
-        color: #585858;
-        background-color: skyblue;
-    }
+        width: 100%; }
+        body .progress .progress-box .scroll-box {
+          height: 224px;
+          width: inherit;
+          overflow-y: scroll;
+          overflow-x: hidden; }
+          body .progress .progress-box .scroll-box .scroll-area {
+            height: 600px;
+            width: inherit; }
+            body .progress .progress-box .scroll-box .scroll-area .text-area {
+              height: 224px;
+              width: 100%; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .progress-date {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.05em;
+                padding-top: 0.5em;
+                margin: 0px 0px 15px 15px;
+                font-size: 1em; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .initial-description {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.05em;
+                padding-top: 0.5em;
+                margin: 0px 0px 15px 15px;
+                font-size: 0.9em; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .final-description {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.05em;
+                padding-top: 0.5em;
+                margin: 0px 0px 15px 15px;
+                font-size: 0.9em; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-1 {
+              color: #ECECEC;
+              background-color: #32586b; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-2 {
+              color: #E6E6E6;
+              background-color: #3c6980; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-3 {
+              color: #585858;
+              background-color: skyblue; }
     body .profile {
-        height: 1000px;
-        background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
-        background-position: 50% 0px;
-    }
-    body .profile .white-space {
+      height: 1000px;
+      background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
+      background-position: 50% 0px; }
+      body .profile .white-space {
         height: 80px;
-        width: 100%;
-    }
-    body .profile .portfolio {
+        width: 100%; }
+      body .profile .portfolio {
         height: 250px;
-        width: 100%;
-    }
-    body .profile .portfolio .profile-img {
-        height: inherit;
-        width: 250px;
-        border-radius: 50%;
-        background-color: white;
-    }
-    body .profile .author-info {
+        width: 100%; }
+        body .profile .portfolio .profile-img {
+          height: inherit;
+          width: 250px;
+          border-radius: 50%;
+          background-color: white; }
+      body .profile .author-info {
         height: 500px;
-        width: 100%;
-    }
-    body .profile .author-info .about-me {
-        height: 500px;
-        width: 100%;
-        background-color: white;
-        font-family: 'Roboto', sans-serif;
-        background-color: white;
-    }
-    body .profile .author-info .about-me .content {
-        height: 40%;
-        width: 100%;
-    }
-    body .profile .author-info .about-me .content .content-margin {
-        letter-spacing: 0.09em;
-        line-height: 1.5em;
-        margin: 5%;
-    }
-    body .profile .author-info .about-me .content-title {
-        height: 20%;
-        width: 100%;
-    }
-    footer {
-        height: 500px;
-        width: 100%;
-    }
+        width: 100%; }
+        body .profile .author-info .about-me {
+          height: 500px;
+          width: 100%;
+          background-color: white;
+          font-family: 'Roboto', sans-serif;
+          background-color: white; }
+          body .profile .author-info .about-me .content {
+            height: 40%;
+            width: 100%; }
+            body .profile .author-info .about-me .content .content-margin {
+              letter-spacing: 0.09em;
+              line-height: 1.5em;
+              margin: 5%; }
+          body .profile .author-info .about-me .content-title {
+            height: 20%;
+            width: 100%; }
+  footer {
+    height: 500px;
+    width: 100%; }
     footer .social-media-icon {
-        height: 40px;
-        width: 40px;
-    }
+      height: 40px;
+      width: 40px; }
     footer .details {
-        height: 250px;
-        width: 100%;
-        background-color: #32586b;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-    footer .details .contact-info {
+      height: 250px;
+      width: 100%;
+      background-color: #32586b;
+      display: flex;
+      justify-content: space-around; }
+      footer .details .contact-info {
         height: 250px;
         width: 250px;
         font-family: 'Roboto', sans-serif;
         font-size: 0.9em;
-        text-align: center;
-    }
-    footer .details .contact-info .contact-name {
-        margin-top: 10%;
-        color: white;
-        font-family: 'Roboto Slab', serif;
-        font-size: 1.1em;
-        letter-spacing: 0.12em;
-    }
-    footer .details .phone-number {
+        text-align: center; }
+        footer .details .contact-info .contact-name {
+          margin-top: 10%;
+          color: white;
+          font-family: 'Roboto Slab', serif;
+          font-size: 1.1em;
+          letter-spacing: 0.12em; }
+      footer .details .phone-number {
         margin-top: 10px;
         height: 25px;
         width: 100%;
         letter-spacing: 0.12em;
-        color: #ebebeb;
-    }
-    footer .details .email-info {
+        color: #ebebeb; }
+      footer .details .email-info {
         margin-top: 20px;
         height: 25px;
         width: 100%;
         letter-spacing: 0.12em;
-        color: lightgray;
-    }
-    footer .details .address {
+        color: lightgray; }
+      footer .details .address {
         width: 100%;
         height: 90px;
         letter-spacing: 0.12em;
-        color: #ebebeb;
-    }
-    footer .details .address ul {
-        list-style-type: none;
-        padding-left: 20px;
-    }
-    footer .details .address ul li {
-        list-style-type: none;
-        padding: 2.5px 0px 2.5px 0px;
-    }
+        color: #ebebeb; }
+        footer .details .address ul {
+          list-style-type: none;
+          padding-left: 20px; }
+          footer .details .address ul li {
+            list-style-type: none;
+            padding: 2.5px 0px 2.5px 0px; }
     footer #social-details {
-        height: 250px;
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        background-color: #3c6980;
-    }
-    footer #social-details #social-info {
+      height: 250px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      background-color: #3c6980; }
+      footer #social-details #social-info {
         width: 250px;
-        height: 250px;
-    }
-    footer #social-details #social-info #social-layout {
-        width: inherit;
-        height: 125px;
-    }
-    footer #social-details #social-info #social-layout #social-name {
-        width: inherit;
-        height: 62.5px;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.1em;
-        letter-spacing: 0.12em;
-        color: white;
-    }
-    footer #social-details #social-info #social-layout #social-icons {
-        width: 250px;
-        height: 62.5px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    footer #social-details #social-info #event-layout {
-        width: 250px;
-        height: 125px;
-    }
-    footer #social-details #social-info #event-name {
-        width: 250px;
-        height: 62.5px;
-        color: white;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.1em;
-        letter-spacing: 0.12em;
-    }
-    footer #social-details #social-info #event-icons {
-        width: 250px;
-        height: 62.5px;
-    }
-    footer #social-details #social-info #icon-centralise {
-        width: 150px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-}
+        height: 250px; }
+        footer #social-details #social-info #social-layout {
+          width: inherit;
+          height: 125px; }
+          footer #social-details #social-info #social-layout #social-name {
+            width: inherit;
+            height: 62.5px;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.1em;
+            letter-spacing: 0.12em;
+            color: white; }
+          footer #social-details #social-info #social-layout #social-icons {
+            width: 250px;
+            height: 62.5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center; }
+        footer #social-details #social-info #event-layout {
+          width: 250px;
+          height: 125px; }
+        footer #social-details #social-info #event-name {
+          width: 250px;
+          height: 62.5px;
+          color: white;
+          font-family: "Roboto Slab", serif;
+          font-size: 1.1em;
+          letter-spacing: 0.12em; }
+        footer #social-details #social-info #event-icons {
+          width: 250px;
+          height: 62.5px; }
+        footer #social-details #social-info #icon-centralise {
+          width: 150px;
+          display: flex;
+          justify-content: space-around; } }
 
 @media screen and (min-width: 720px) {
-    .flex {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .flex-start {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .flex-center {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .flex-end {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-    }
-    .white-space {
-        height: 80px;
-    }
-    .overflow-show {
-        overflow: visible;
-    }
-    body {
-        margin: 0;
-        height: 5250px;
-    }
+  .flex {
+    height: 250px;
+    display: flex; }
+  .flex-start {
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .flex-center {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .flex-end {
+    height: 250px;
+    display: flex;
+    justify-content: flex-end; }
+  .white-space {
+    height: 80px; }
+  .overflow-show {
+    overflow: visible; }
+  body {
+    margin: 0;
+    height: 5250px; }
     body .landing-wrapper {
-        height: 1000px;
-        width: 100%;
-        background-image: url(https://images2.alphacoders.com/633/633149.jpg);
-        background-position: 50% 0px;
-    }
-    body .landing-wrapper #lander-title {
+      height: 1000px;
+      width: 100%;
+      background-image: url(https://images2.alphacoders.com/633/633149.jpg);
+      background-position: 50% 0px; }
+      body .landing-wrapper #lander-title {
         height: 10vh;
         width: 90vw;
-        -ms-flex-item-align: end;
-        align-self: flex-end;
-    }
-    body .landing-wrapper #img-rick-fall {
-        height: 350px;
-    }
-    body .landing-wrapper #img-cromulon {
+        align-self: flex-end; }
+      body .landing-wrapper #img-rick-fall {
+        height: 350px; }
+      body .landing-wrapper #img-cromulon {
         height: 350px;
         margin-right: 20px;
-        -webkit-transform: scaleX(-1);
-        -ms-transform: scaleX(-1);
         transform: scaleX(-1);
         float: right;
-        -ms-flex-item-align: end;
-        align-self: end;
-    }
+        align-self: end; }
     body .projects {
-        height: 2250px;
-        width: 100%;
-    }
-    body .projects .empty-space {
+      height: 2250px;
+      width: 100%; }
+      body .projects .empty-space {
         height: 25px;
         width: 100%;
-        background-color: white;
-    }
-    body .projects .solo-projects {
-        height: 1125px;
-    }
-    body .projects .solo-projects .character-box {
-        height: 320px;
-        width: 100%;
-    }
-    body .projects .solo-projects .character-box .title-container {
-        height: 120px;
-        width: 100%;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.5em;
-    }
-    body .projects .solo-projects .character-box .img-container {
-        height: 160px;
-        font-size: 1em;
-    }
-    body .projects .solo-projects .character-box .img-container .circle-container {
-        height: 150px;
-        width: 150px;
-        border: 5px solid black;
-        border-radius: 50%;
-        background-color: white;
-    }
-    body .projects .solo-projects .character-box .img-container .circle-container #img-morty {
-        height: inherit;
-    }
-    body .projects .solo-projects .character-box .img-container .player-tag {
-        position: absolute;
-        margin-top: 75px;
-        height: 45px;
-        width: 150px;
-        border-radius: 20px;
-        font-family: "Roboto", sans-serif;
-        background-color: black;
-        color: white;
-    }
-    body .projects .solo-projects .responsive-box {
-        height: 300px;
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    body .projects .solo-projects .responsive-box .empty-space {
-        height: 0;
-        width: 0;
-    }
-    body .projects .solo-projects .responsive-box .project-box {
-        height: 210px;
-        width: 360px;
-    }
-    body .projects .solo-projects .responsive-box .project-box button {
-        text-align: start;
-    }
-    body .projects .solo-projects .responsive-box .project-box .project-btn {
-        position: absolute;
-        padding: 0;
-        height: 200px;
-        width: 350px;
-        border: 5px solid black;
-        background-color: white;
-    }
-    body .projects .solo-projects .responsive-box .project-box .project-btn .project-img {
-        height: 190px;
-        width: 340px;
-    }
-    body .projects .solo-projects .responsive-box .project-box .project-btn .terminal-text {
-        font-family: "Courier", sans-serif;
-        font-size: 0.68em;
-        margin: 4px 0px 4px 5px;
-        color: #40e39c;
-    }
-    body .projects .solo-projects .responsive-box .project-box .project-btn a {
-        color: #40e39c;
-    }
-    body .projects .coop-projects {
-        height: 1125px;
-    }
-    body .projects .coop-projects .character-box {
-        height: 320px;
-        width: 100%;
-    }
-    body .projects .coop-projects .character-box #img-rick-morty {
-        height: 150px;
-    }
-    body .projects .coop-projects .character-box .title-container {
-        height: 80px;
-        width: 100%;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.5em;
-    }
-    body .projects .coop-projects .character-box .img-container {
-        height: 160px;
-        font-size: 1em;
-    }
-    body .projects .coop-projects .character-box .img-container .circle-container {
-        height: 150px;
-        width: 150px;
-        border: 5px solid black;
-        border-radius: 50%;
-        background-color: white;
-    }
-    body .projects .coop-projects .character-box .img-container .circle-container #img-morty {
-        height: inherit;
-    }
-    body .projects .coop-projects .character-box .img-container .player-tag {
-        position: absolute;
-        margin-top: 75px;
-        height: 45px;
-        width: 150px;
-        border-radius: 20px;
-        font-family: "Roboto", sans-serif;
-        background-color: black;
-        color: white;
-    }
-    body .projects .coop-projects .responsive-box {
-        height: 300px;
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    body .projects .coop-projects .responsive-box .empty-space {
-        height: 0;
-        width: 0;
-    }
-    body .projects .coop-projects .responsive-box .project-box {
-        height: 210px;
-        width: 360px;
-    }
-    body .projects .coop-projects .responsive-box .project-box button {
-        text-align: start;
-    }
-    body .projects .coop-projects .responsive-box .project-box .project-btn {
-        position: absolute;
-        padding: 0;
-        height: 200px;
-        width: 350px;
-        border: 5px solid black;
-        background-color: white;
-    }
-    body .projects .coop-projects .responsive-box .project-box .project-btn .project-img {
-        height: 190px;
-        width: 340px;
-    }
-    body .projects .coop-projects .responsive-box .project-box .project-btn .terminal-text {
-        font-family: "Courier", sans-serif;
-        font-size: 0.68em;
-        margin: 4px 0px 4px 5px;
-        color: #40e39c;
-    }
-    body .projects .coop-projects .responsive-box .project-box .project-btn a {
-        color: #40e39c;
-    }
+        background-color: white; }
+      body .projects .solo-projects {
+        height: 1125px; }
+        body .projects .solo-projects .character-box {
+          height: 320px;
+          width: 100%; }
+          body .projects .solo-projects .character-box .title-container {
+            height: 120px;
+            width: 100%;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.5em; }
+          body .projects .solo-projects .character-box .img-container {
+            height: 160px;
+            font-size: 1em; }
+            body .projects .solo-projects .character-box .img-container .circle-container {
+              height: 150px;
+              width: 150px;
+              border: 5px solid black;
+              border-radius: 50%;
+              background-color: white; }
+              body .projects .solo-projects .character-box .img-container .circle-container #img-morty {
+                height: inherit; }
+            body .projects .solo-projects .character-box .img-container .player-tag {
+              position: absolute;
+              margin-top: 75px;
+              height: 45px;
+              width: 150px;
+              border-radius: 20px;
+              font-family: "Roboto", sans-serif;
+              background-color: black;
+              color: white; }
+        body .projects .solo-projects .responsive-box {
+          height: 300px;
+          width: 100%;
+          display: flex;
+          justify-content: center; }
+          body .projects .solo-projects .responsive-box .empty-space {
+            height: 0;
+            width: 0; }
+          body .projects .solo-projects .responsive-box .project-box {
+            height: 210px;
+            width: 360px; }
+            body .projects .solo-projects .responsive-box .project-box button {
+              text-align: start; }
+            body .projects .solo-projects .responsive-box .project-box .project-btn {
+              position: absolute;
+              padding: 0;
+              height: 200px;
+              width: 350px;
+              border: 5px solid black;
+              background-color: white; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn .company-icon {
+                height: 36px;
+                position: absolute;
+                top: 5px;
+                left: 5px; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn #fcc-icon {
+                height: 40px; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn #youtube-icon {
+                top: 0;
+                height: 40px; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn .project-img {
+                position: absolute;
+                top: 0;
+                height: 190px;
+                width: 340px; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn .terminal-text {
+                font-family: "Courier", sans-serif;
+                font-size: 0.9em;
+                margin: 4px 0px 4px 5px;
+                color: #40e39c; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn a {
+                color: #40e39c; }
+      body .projects .coop-projects {
+        height: 1125px; }
+        body .projects .coop-projects .character-box {
+          height: 320px;
+          width: 100%; }
+          body .projects .coop-projects .character-box #img-rick-morty {
+            height: 150px; }
+          body .projects .coop-projects .character-box .title-container {
+            height: 80px;
+            width: 100%;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.5em; }
+          body .projects .coop-projects .character-box .img-container {
+            height: 160px;
+            font-size: 1em; }
+            body .projects .coop-projects .character-box .img-container .circle-container {
+              height: 150px;
+              width: 150px;
+              border: 5px solid black;
+              border-radius: 50%;
+              background-color: white; }
+              body .projects .coop-projects .character-box .img-container .circle-container #img-morty {
+                height: inherit; }
+            body .projects .coop-projects .character-box .img-container .player-tag {
+              position: absolute;
+              margin-top: 75px;
+              height: 45px;
+              width: 150px;
+              border-radius: 20px;
+              font-family: "Roboto", sans-serif;
+              background-color: black;
+              color: white; }
+        body .projects .coop-projects .responsive-box {
+          height: 300px;
+          width: 100%;
+          display: flex;
+          justify-content: center; }
+          body .projects .coop-projects .responsive-box .empty-space {
+            height: 0;
+            width: 0; }
+          body .projects .coop-projects .responsive-box .project-box {
+            height: 210px;
+            width: 360px; }
+            body .projects .coop-projects .responsive-box .project-box button {
+              text-align: start; }
+            body .projects .coop-projects .responsive-box .project-box .project-btn {
+              position: absolute;
+              padding: 0;
+              height: 200px;
+              width: 350px;
+              border: 5px solid black;
+              background-color: white; }
+              body .projects .coop-projects .responsive-box .project-box .project-btn .project-img {
+                position: absolute;
+                top: 0;
+                height: 190px;
+                width: 340px; }
+              body .projects .coop-projects .responsive-box .project-box .project-btn .terminal-text {
+                font-family: "Courier", sans-serif;
+                font-size: 0.9em;
+                margin: 4px 0px 4px 5px;
+                color: #40e39c; }
+              body .projects .coop-projects .responsive-box .project-box .project-btn a {
+                color: #40e39c; }
     body .progress {
-        height: 1000px;
-        background-color: skyblue;
-    }
-    body .progress .title-container {
+      height: 1000px;
+      background-color: skyblue; }
+      body .progress .title-container {
         height: 120px;
         width: 100%;
         font-family: "Roboto Slab", serif;
-        font-size: 1.5em;
-    }
-    body .progress .graph-area {
+        font-size: 1.5em; }
+      body .progress .graph-area {
         height: 490px;
-        width: 100%;
-    }
-    body .progress .graph-area .graph {
-        position: absolute;
-        height: 320px;
-        width: 560px;
-        border-bottom: 5px solid black;
-        border-left: 5px solid black;
-        background-color: white;
-    }
-    body .progress .graph-area .graph img {
-        position: absolute;
-        height: 320px;
-        width: 560px;
-    }
-    body .progress .graph-area .graph .white-cover {
-        position: absolute;
-        height: 320px;
-        width: 140px;
-        bottom: 0;
-        right: 0;
-        background-color: white;
-    }
-    body .progress .progress-box {
+        width: 100%; }
+        body .progress .graph-area .graph {
+          position: absolute;
+          height: 320px;
+          width: 560px;
+          border-bottom: 5px solid black;
+          border-left: 5px solid black;
+          background-color: white; }
+          body .progress .graph-area .graph img {
+            position: absolute;
+            height: 320px;
+            width: 560px; }
+          body .progress .graph-area .graph .white-cover {
+            position: absolute;
+            height: 320px;
+            width: 140px;
+            bottom: 0;
+            right: 0;
+            background-color: white; }
+      body .progress .progress-box {
         height: 224px;
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    body .progress .progress-box .scroll-box {
-        height: 224px;
-        width: 560px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-    body .progress .progress-box .scroll-box .scroll-area {
-        height: 600px;
-        width: inherit;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area {
-        height: 224px;
-        width: 100%;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area .progress-date {
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 0.05em;
-        padding-top: 0.5em;
-        margin: 0px 0px 15px 15px;
-        font-size: 1em;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area .initial-description {
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 0.05em;
-        padding-top: 0.5em;
-        margin: 0px 0px 15px 15px;
-        font-size: 0.9em;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area .final-description {
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 0.05em;
-        padding-top: 0.5em;
-        margin: 0px 0px 15px 15px;
-        font-size: 0.9em;
-    }
-    body .progress .progress-box .scroll-box .scroll-area #text-box-1 {
-        color: #ECECEC;
-        background-color: #32586b;
-    }
-    body .progress .progress-box .scroll-box .scroll-area #text-box-2 {
-        color: #E6E6E6;
-        background-color: #3c6980;
-    }
-    body .progress .progress-box .scroll-box .scroll-area #text-box-3 {
-        color: #585858;
-        background-color: skyblue;
-    }
+        justify-content: center; }
+        body .progress .progress-box .scroll-box {
+          height: 224px;
+          width: 560px;
+          overflow-y: scroll;
+          overflow-x: hidden; }
+          body .progress .progress-box .scroll-box .scroll-area {
+            height: 600px;
+            width: inherit; }
+            body .progress .progress-box .scroll-box .scroll-area .text-area {
+              height: 224px;
+              width: 100%; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .progress-date {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.05em;
+                padding-top: 0.5em;
+                margin: 0px 0px 15px 15px;
+                font-size: 1em; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .initial-description {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.05em;
+                padding-top: 0.5em;
+                margin: 0px 0px 15px 15px;
+                font-size: 0.9em; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .final-description {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.05em;
+                padding-top: 0.5em;
+                margin: 0px 0px 15px 15px;
+                font-size: 0.9em; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-1 {
+              color: #ECECEC;
+              background-color: #32586b; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-2 {
+              color: #E6E6E6;
+              background-color: #3c6980; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-3 {
+              color: #585858;
+              background-color: skyblue; }
     body .profile {
-        height: 1000px;
-        background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
-        background-position: 50% 0px;
-    }
-    body .profile .white-space {
+      height: 1000px;
+      background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
+      background-position: 50% 0px; }
+      body .profile .white-space {
         height: 80px;
-        width: 100%;
-    }
-    body .profile .portfolio {
+        width: 100%; }
+      body .profile .portfolio {
         height: 250px;
-        width: 100%;
-    }
-    body .profile .portfolio .profile-img {
-        height: inherit;
-        width: 250px;
-        border-radius: 50%;
-        background-color: white;
-    }
-    body .profile .author-info {
+        width: 100%; }
+        body .profile .portfolio .profile-img {
+          height: inherit;
+          width: 250px;
+          border-radius: 50%;
+          background-color: white; }
+      body .profile .author-info {
         height: 500px;
-        width: 100%;
-    }
-    body .profile .author-info .about-me {
-        height: 500px;
-        width: 100%;
-        background-color: white;
-        font-family: 'Roboto', sans-serif;
-        background-color: white;
-    }
-    body .profile .author-info .about-me .content {
-        height: 40%;
-        width: 100%;
-    }
-    body .profile .author-info .about-me .content .content-margin {
-        letter-spacing: 0.09em;
-        line-height: 1.5em;
-        margin: 1em 10% 1em 10%;
-    }
-    body .profile .author-info .about-me .content-title {
-        height: 20%;
-        width: 100%;
-    }
-    footer {
-        height: 250px;
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
+        width: 100%; }
+        body .profile .author-info .about-me {
+          height: 500px;
+          width: 100%;
+          background-color: white;
+          font-family: 'Roboto', sans-serif;
+          background-color: white; }
+          body .profile .author-info .about-me .content {
+            height: 40%;
+            width: 100%; }
+            body .profile .author-info .about-me .content .content-margin {
+              letter-spacing: 0.09em;
+              line-height: 1.5em;
+              margin: 1em 10% 1em 10%; }
+          body .profile .author-info .about-me .content-title {
+            height: 20%;
+            width: 100%; }
+  footer {
+    height: 250px;
+    width: 100%;
+    display: flex; }
     footer .social-media-icon {
-        height: 40px;
-        width: 40px;
-    }
+      height: 40px;
+      width: 40px; }
     footer .details {
-        height: 250px;
-        width: 50%;
-        background-color: #32586b;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-    footer .details .contact-info {
+      height: 250px;
+      width: 50%;
+      background-color: #32586b;
+      display: flex;
+      justify-content: space-around; }
+      footer .details .contact-info {
         height: 250px;
         width: 250px;
         font-family: 'Roboto', sans-serif;
         font-size: 0.9em;
-        text-align: center;
-    }
-    footer .details .contact-info .contact-name {
-        margin-top: 10%;
-        color: white;
-        font-family: 'Roboto Slab', serif;
-        font-size: 1.1em;
-        letter-spacing: 0.12em;
-    }
-    footer .details .phone-number {
+        text-align: center; }
+        footer .details .contact-info .contact-name {
+          margin-top: 10%;
+          color: white;
+          font-family: 'Roboto Slab', serif;
+          font-size: 1.1em;
+          letter-spacing: 0.12em; }
+      footer .details .phone-number {
         margin-top: 10px;
         height: 25px;
         width: 100%;
         letter-spacing: 0.12em;
-        color: #ebebeb;
-    }
-    footer .details .email-info {
+        color: #ebebeb; }
+      footer .details .email-info {
         margin-top: 20px;
         height: 25px;
         width: 100%;
         letter-spacing: 0.12em;
-        color: lightgray;
-    }
-    footer .details .address {
+        color: lightgray; }
+      footer .details .address {
         width: 100%;
         height: 90px;
         letter-spacing: 0.12em;
-        color: #ebebeb;
-    }
-    footer .details .address ul {
-        list-style-type: none;
-        padding-left: 20px;
-    }
-    footer .details .address ul li {
-        list-style-type: none;
-        padding: 2.5px 0px 2.5px 0px;
-    }
+        color: #ebebeb; }
+        footer .details .address ul {
+          list-style-type: none;
+          padding-left: 20px; }
+          footer .details .address ul li {
+            list-style-type: none;
+            padding: 2.5px 0px 2.5px 0px; }
     footer #social-details {
-        height: 250px;
-        width: 50%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        background-color: #3c6980;
-    }
-    footer #social-details #social-info {
+      height: 250px;
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      background-color: #3c6980; }
+      footer #social-details #social-info {
         width: 250px;
-        height: 250px;
-    }
-    footer #social-details #social-info #social-layout {
-        width: inherit;
-        height: 125px;
-    }
-    footer #social-details #social-info #social-layout #social-name {
-        width: inherit;
-        height: 62.5px;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.1em;
-        letter-spacing: 0.12em;
-        color: white;
-    }
-    footer #social-details #social-info #social-layout #social-icons {
-        width: 250px;
-        height: 62.5px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    footer #social-details #social-info #event-layout {
-        width: 250px;
-        height: 125px;
-    }
-    footer #social-details #social-info #event-name {
-        width: 250px;
-        height: 62.5px;
-        color: white;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.1em;
-        letter-spacing: 0.12em;
-    }
-    footer #social-details #social-info #event-icons {
-        width: 250px;
-        height: 62.5px;
-    }
-    footer #social-details #social-info #icon-centralise {
-        width: 150px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-}
+        height: 250px; }
+        footer #social-details #social-info #social-layout {
+          width: inherit;
+          height: 125px; }
+          footer #social-details #social-info #social-layout #social-name {
+            width: inherit;
+            height: 62.5px;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.1em;
+            letter-spacing: 0.12em;
+            color: white; }
+          footer #social-details #social-info #social-layout #social-icons {
+            width: 250px;
+            height: 62.5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center; }
+        footer #social-details #social-info #event-layout {
+          width: 250px;
+          height: 125px; }
+        footer #social-details #social-info #event-name {
+          width: 250px;
+          height: 62.5px;
+          color: white;
+          font-family: "Roboto Slab", serif;
+          font-size: 1.1em;
+          letter-spacing: 0.12em; }
+        footer #social-details #social-info #event-icons {
+          width: 250px;
+          height: 62.5px; }
+        footer #social-details #social-info #icon-centralise {
+          width: 150px;
+          display: flex;
+          justify-content: space-around; } }
 
 @media screen and (min-width: 1366px) {
-    .flex {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
-    .flex-start {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .flex-center {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    .flex-end {
-        height: 250px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: end;
-        -ms-flex-pack: end;
-        justify-content: flex-end;
-    }
-    .white-space {
-        height: 80px;
-    }
-    .overflow-show {
-        overflow: visible;
-    }
-    body {
-        margin: 0;
-        height: 5250px;
-    }
+  .flex {
+    height: 250px;
+    display: flex; }
+  .flex-start {
+    height: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+  .flex-center {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .flex-end {
+    height: 250px;
+    display: flex;
+    justify-content: flex-end; }
+  .white-space {
+    height: 80px; }
+  .overflow-show {
+    overflow: visible; }
+  body {
+    margin: 0;
+    height: 5250px; }
     body .landing-wrapper {
-        height: 1000px;
-        width: 100%;
-        background-image: url(https://images2.alphacoders.com/633/633149.jpg);
-        background-position: 50% 0px;
-    }
-    body .landing-wrapper #lander-title {
+      height: 1000px;
+      width: 100%;
+      background-image: url(https://images2.alphacoders.com/633/633149.jpg);
+      background-position: 50% 0px; }
+      body .landing-wrapper #lander-title {
         height: 90px;
         width: 1000px;
-        -ms-flex-item-align: end;
-        align-self: flex-end;
-    }
-    body .landing-wrapper #img-rick-fall {
-        height: 350px;
-    }
-    body .landing-wrapper #img-cromulon {
+        align-self: flex-end; }
+      body .landing-wrapper #img-rick-fall {
+        height: 350px; }
+      body .landing-wrapper #img-cromulon {
         height: 350px;
         margin-right: 20px;
-        -webkit-transform: scaleX(-1);
-        -ms-transform: scaleX(-1);
         transform: scaleX(-1);
         float: right;
-        -ms-flex-item-align: end;
-        align-self: end;
-    }
+        align-self: end; }
     body .projects {
-        height: 2250px;
-        width: 100%;
-    }
-    body .projects .empty-space {
+      height: 2250px;
+      width: 100%; }
+      body .projects .empty-space {
         height: 25px;
         width: 100%;
-        background-color: white;
-    }
-    body .projects .solo-projects {
-        height: 1125px;
-    }
-    body .projects .solo-projects .character-box {
-        height: 320px;
-        width: 100%;
-    }
-    body .projects .solo-projects .character-box .title-container {
-        height: 120px;
-        width: 100%;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.5em;
-    }
-    body .projects .solo-projects .character-box .img-container {
-        height: 160px;
-        font-size: 1em;
-    }
-    body .projects .solo-projects .character-box .img-container .circle-container {
-        height: 150px;
-        width: 150px;
-        border: 5px solid black;
-        border-radius: 50%;
-        background-color: white;
-    }
-    body .projects .solo-projects .character-box .img-container .circle-container #img-morty {
-        height: inherit;
-    }
-    body .projects .solo-projects .character-box .img-container .player-tag {
-        position: absolute;
-        margin-top: 75px;
-        height: 45px;
-        width: 150px;
-        border-radius: 20px;
-        font-family: "Roboto", sans-serif;
-        background-color: black;
-        color: white;
-    }
-    body .projects .solo-projects .responsive-box {
-        height: 350px;
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    body .projects .solo-projects .responsive-box .empty-space {
-        height: 0;
-        width: 0;
-    }
-    body .projects .solo-projects .responsive-box .project-box {
-        height: 310px;
-        width: 535px;
-    }
-    body .projects .solo-projects .responsive-box .project-box button {
-        text-align: start;
-    }
-    body .projects .solo-projects .responsive-box .project-box .project-btn {
-        position: absolute;
-        padding: 0;
-        height: 300px;
-        width: 525px;
-        border: 5px solid black;
-        background-color: white;
-    }
-    body .projects .solo-projects .responsive-box .project-box .project-btn .project-img {
-        height: 290px;
-        width: 515px;
-    }
-    body .projects .solo-projects .responsive-box .project-box .project-btn .terminal-text {
-        font-family: "Courier", sans-serif;
-        font-size: 0.68em;
-        margin: 4px 0px 4px 5px;
-        color: #40e39c;
-    }
-    body .projects .solo-projects .responsive-box .project-box .project-btn a {
-        color: #40e39c;
-    }
-    body .projects .coop-projects {
-        height: 1125px;
-    }
-    body .projects .coop-projects .character-box {
-        height: 320px;
-        width: 100%;
-    }
-    body .projects .coop-projects .character-box #img-rick-morty {
-        height: 150px;
-    }
-    body .projects .coop-projects .character-box .title-container {
-        height: 80px;
-        width: 100%;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.5em;
-    }
-    body .projects .coop-projects .character-box .img-container {
-        height: 160px;
-        font-size: 1em;
-    }
-    body .projects .coop-projects .character-box .img-container .circle-container {
-        height: 150px;
-        width: 150px;
-        border: 5px solid black;
-        border-radius: 50%;
-        background-color: white;
-    }
-    body .projects .coop-projects .character-box .img-container .circle-container #img-morty {
-        height: inherit;
-    }
-    body .projects .coop-projects .character-box .img-container .player-tag {
-        position: absolute;
-        margin-top: 75px;
-        height: 45px;
-        width: 150px;
-        border-radius: 20px;
-        font-family: "Roboto", sans-serif;
-        background-color: black;
-        color: white;
-    }
-    body .projects .coop-projects .responsive-box {
-        height: 350px;
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    body .projects .coop-projects .responsive-box .empty-space {
-        height: 0;
-        width: 0;
-    }
-    body .projects .coop-projects .responsive-box .project-box {
-        height: 310px;
-        width: 535px;
-    }
-    body .projects .coop-projects .responsive-box .project-box button {
-        text-align: start;
-    }
-    body .projects .coop-projects .responsive-box .project-box .project-btn {
-        position: absolute;
-        padding: 0;
-        height: 300px;
-        width: 525px;
-        border: 5px solid black;
-        background-color: white;
-    }
-    body .projects .coop-projects .responsive-box .project-box .project-btn .project-img {
-        height: 290px;
-        width: 515px;
-    }
-    body .projects .coop-projects .responsive-box .project-box .project-btn .terminal-text {
-        font-family: "Courier", sans-serif;
-        font-size: 0.68em;
-        margin: 4px 0px 4px 5px;
-        color: #40e39c;
-    }
-    body .projects .coop-projects .responsive-box .project-box .project-btn a {
-        color: #40e39c;
-    }
+        background-color: white; }
+      body .projects .solo-projects {
+        height: 1125px; }
+        body .projects .solo-projects .character-box {
+          height: 320px;
+          width: 100%; }
+          body .projects .solo-projects .character-box .title-container {
+            height: 120px;
+            width: 100%;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.5em; }
+          body .projects .solo-projects .character-box .img-container {
+            height: 160px;
+            font-size: 1em; }
+            body .projects .solo-projects .character-box .img-container .circle-container {
+              height: 150px;
+              width: 150px;
+              border: 5px solid black;
+              border-radius: 50%;
+              background-color: white; }
+              body .projects .solo-projects .character-box .img-container .circle-container #img-morty {
+                height: inherit; }
+            body .projects .solo-projects .character-box .img-container .player-tag {
+              position: absolute;
+              margin-top: 75px;
+              height: 45px;
+              width: 150px;
+              border-radius: 20px;
+              font-family: "Roboto", sans-serif;
+              background-color: black;
+              color: white; }
+        body .projects .solo-projects .responsive-box {
+          height: 350px;
+          width: 100%;
+          display: flex;
+          justify-content: center; }
+          body .projects .solo-projects .responsive-box .empty-space {
+            height: 0;
+            width: 0; }
+          body .projects .solo-projects .responsive-box .project-box {
+            height: 310px;
+            width: 535px; }
+            body .projects .solo-projects .responsive-box .project-box button {
+              text-align: start; }
+            body .projects .solo-projects .responsive-box .project-box .project-btn {
+              position: absolute;
+              padding: 0;
+              height: 300px;
+              width: 525px;
+              border: 5px solid black;
+              background-color: white; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn .company-icon {
+                height: 50px;
+                position: absolute;
+                top: 10px;
+                left: 10px; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn #fcc-icon {
+                height: 55px; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn #youtube-icon {
+                top: 0;
+                height: 55px; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn .project-img {
+                position: absolute;
+                top: 0;
+                height: 290px;
+                width: 515px; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn .terminal-text {
+                font-family: "Courier", sans-serif;
+                font-size: 1.2em;
+                margin: 4px 0px 4px 5px;
+                color: #40e39c; }
+              body .projects .solo-projects .responsive-box .project-box .project-btn a {
+                color: #40e39c; }
+      body .projects .coop-projects {
+        height: 1125px; }
+        body .projects .coop-projects .character-box {
+          height: 320px;
+          width: 100%; }
+          body .projects .coop-projects .character-box #img-rick-morty {
+            height: 150px; }
+          body .projects .coop-projects .character-box .title-container {
+            height: 80px;
+            width: 100%;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.5em; }
+          body .projects .coop-projects .character-box .img-container {
+            height: 160px;
+            font-size: 1em; }
+            body .projects .coop-projects .character-box .img-container .circle-container {
+              height: 150px;
+              width: 150px;
+              border: 5px solid black;
+              border-radius: 50%;
+              background-color: white; }
+              body .projects .coop-projects .character-box .img-container .circle-container #img-morty {
+                height: inherit; }
+            body .projects .coop-projects .character-box .img-container .player-tag {
+              position: absolute;
+              margin-top: 75px;
+              height: 45px;
+              width: 150px;
+              border-radius: 20px;
+              font-family: "Roboto", sans-serif;
+              background-color: black;
+              color: white; }
+        body .projects .coop-projects .responsive-box {
+          height: 350px;
+          width: 100%;
+          display: flex;
+          justify-content: center; }
+          body .projects .coop-projects .responsive-box .empty-space {
+            height: 0;
+            width: 0; }
+          body .projects .coop-projects .responsive-box .project-box {
+            height: 310px;
+            width: 535px; }
+            body .projects .coop-projects .responsive-box .project-box button {
+              text-align: start; }
+            body .projects .coop-projects .responsive-box .project-box .project-btn {
+              position: absolute;
+              padding: 0;
+              height: 300px;
+              width: 525px;
+              border: 5px solid black;
+              background-color: white; }
+              body .projects .coop-projects .responsive-box .project-box .project-btn .project-img {
+                position: absolute;
+                top: 0;
+                height: 290px;
+                width: 515px; }
+              body .projects .coop-projects .responsive-box .project-box .project-btn .terminal-text {
+                font-family: "Courier", sans-serif;
+                font-size: 1.2em;
+                margin: 4px 0px 4px 5px;
+                color: #40e39c; }
+              body .projects .coop-projects .responsive-box .project-box .project-btn a {
+                color: #40e39c; }
     body .progress {
-        height: 1000px;
-        background-color: skyblue;
-    }
-    body .progress .title-container {
+      height: 1000px;
+      background-color: skyblue; }
+      body .progress .title-container {
         height: 120px;
         width: 100%;
         font-family: "Roboto Slab", serif;
-        font-size: 1.5em;
-    }
-    body .progress .graph-area {
+        font-size: 1.5em; }
+      body .progress .graph-area {
         height: 490px;
-        width: 100%;
-    }
-    body .progress .graph-area .graph {
-        position: absolute;
-        height: 320px;
-        width: 560px;
-        border-bottom: 5px solid black;
-        border-left: 5px solid black;
-        background-color: white;
-    }
-    body .progress .graph-area .graph img {
-        position: absolute;
-        height: 320px;
-        width: 560px;
-    }
-    body .progress .graph-area .graph .white-cover {
-        position: absolute;
-        height: 320px;
-        width: 140px;
-        bottom: 0;
-        right: 0;
-        background-color: white;
-    }
-    body .progress .progress-box {
+        width: 100%; }
+        body .progress .graph-area .graph {
+          position: absolute;
+          height: 320px;
+          width: 560px;
+          border-bottom: 5px solid black;
+          border-left: 5px solid black;
+          background-color: white; }
+          body .progress .graph-area .graph img {
+            position: absolute;
+            height: 320px;
+            width: 560px; }
+          body .progress .graph-area .graph .white-cover {
+            position: absolute;
+            height: 320px;
+            width: 140px;
+            bottom: 0;
+            right: 0;
+            background-color: white; }
+      body .progress .progress-box {
         height: 224px;
         width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    body .progress .progress-box .scroll-box {
-        height: 224px;
-        width: 560px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-    }
-    body .progress .progress-box .scroll-box .scroll-area {
-        height: 600px;
-        width: inherit;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area {
-        height: 224px;
-        width: 100%;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area .progress-date {
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 0.05em;
-        padding-top: 0.5em;
-        margin: 0px 0px 15px 15px;
-        font-size: 1em;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area .initial-description {
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 0.05em;
-        padding-top: 0.5em;
-        margin: 0px 0px 15px 15px;
-        font-size: 0.9em;
-    }
-    body .progress .progress-box .scroll-box .scroll-area .text-area .final-description {
-        font-family: "Roboto", sans-serif;
-        letter-spacing: 0.05em;
-        padding-top: 0.5em;
-        margin: 0px 0px 15px 15px;
-        font-size: 0.9em;
-    }
-    body .progress .progress-box .scroll-box .scroll-area #text-box-1 {
-        color: #ECECEC;
-        background-color: #32586b;
-    }
-    body .progress .progress-box .scroll-box .scroll-area #text-box-2 {
-        color: #E6E6E6;
-        background-color: #3c6980;
-    }
-    body .progress .progress-box .scroll-box .scroll-area #text-box-3 {
-        color: #585858;
-        background-color: skyblue;
-    }
+        justify-content: center; }
+        body .progress .progress-box .scroll-box {
+          height: 224px;
+          width: 560px;
+          overflow-y: scroll;
+          overflow-x: hidden; }
+          body .progress .progress-box .scroll-box .scroll-area {
+            height: 600px;
+            width: inherit; }
+            body .progress .progress-box .scroll-box .scroll-area .text-area {
+              height: 224px;
+              width: 100%; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .progress-date {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.05em;
+                padding-top: 0.5em;
+                margin: 0px 0px 15px 15px;
+                font-size: 1em; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .initial-description {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.05em;
+                padding-top: 0.5em;
+                margin: 0px 0px 15px 15px;
+                font-size: 0.9em; }
+              body .progress .progress-box .scroll-box .scroll-area .text-area .final-description {
+                font-family: "Roboto", sans-serif;
+                letter-spacing: 0.05em;
+                padding-top: 0.5em;
+                margin: 0px 0px 15px 15px;
+                font-size: 0.9em; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-1 {
+              color: #ECECEC;
+              background-color: #32586b; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-2 {
+              color: #E6E6E6;
+              background-color: #3c6980; }
+            body .progress .progress-box .scroll-box .scroll-area #text-box-3 {
+              color: #585858;
+              background-color: skyblue; }
     body .profile {
-        height: 1000px;
-        background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
-        background-position: 50% 0px;
-    }
-    body .profile .white-space {
+      height: 1000px;
+      background-image: url("https://images8.alphacoders.com/633/thumb-1920-633291.png");
+      background-position: 50% 0px; }
+      body .profile .white-space {
         height: 80px;
-        width: 100%;
-    }
-    body .profile .portfolio {
+        width: 100%; }
+      body .profile .portfolio {
         height: 250px;
-        width: 100%;
-    }
-    body .profile .portfolio .profile-img {
-        height: inherit;
-        width: 250px;
-        border-radius: 50%;
-        background-color: white;
-    }
-    body .profile .author-info {
+        width: 100%; }
+        body .profile .portfolio .profile-img {
+          height: inherit;
+          width: 250px;
+          border-radius: 50%;
+          background-color: white; }
+      body .profile .author-info {
         height: 500px;
-        width: 100%;
-    }
-    body .profile .author-info .about-me {
-        height: 500px;
-        width: 100%;
-        background-color: white;
-        font-family: 'Roboto', sans-serif;
-        background-color: white;
-    }
-    body .profile .author-info .about-me .content {
-        height: 40%;
-        width: 100%;
-    }
-    body .profile .author-info .about-me .content .content-margin {
-        letter-spacing: 0.09em;
-        line-height: 1.5em;
-        width: 1092px;
-    }
-    body .profile .author-info .about-me .content-title {
-        height: 20%;
-        width: 100%;
-    }
-    footer {
-        height: 250px;
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-    }
+        width: 100%; }
+        body .profile .author-info .about-me {
+          height: 500px;
+          width: 100%;
+          background-color: white;
+          font-family: 'Roboto', sans-serif;
+          background-color: white; }
+          body .profile .author-info .about-me .content {
+            height: 40%;
+            width: 100%; }
+            body .profile .author-info .about-me .content .content-margin {
+              letter-spacing: 0.09em;
+              line-height: 1.5em;
+              width: 1092px; }
+          body .profile .author-info .about-me .content-title {
+            height: 20%;
+            width: 100%; }
+  footer {
+    height: 250px;
+    width: 100%;
+    display: flex; }
     footer .social-media-icon {
-        height: 40px;
-        width: 40px;
-    }
+      height: 40px;
+      width: 40px; }
     footer .details {
-        height: 250px;
-        width: 50%;
-        background-color: #32586b;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-    footer .details .contact-info {
+      height: 250px;
+      width: 50%;
+      background-color: #32586b;
+      display: flex;
+      justify-content: space-around; }
+      footer .details .contact-info {
         height: 250px;
         width: 250px;
         font-family: 'Roboto', sans-serif;
         font-size: 0.9em;
-        text-align: center;
-    }
-    footer .details .contact-info .contact-name {
-        margin-top: 10%;
-        color: white;
-        font-family: 'Roboto Slab', serif;
-        font-size: 1.1em;
-        letter-spacing: 0.12em;
-    }
-    footer .details .phone-number {
+        text-align: center; }
+        footer .details .contact-info .contact-name {
+          margin-top: 10%;
+          color: white;
+          font-family: 'Roboto Slab', serif;
+          font-size: 1.1em;
+          letter-spacing: 0.12em; }
+      footer .details .phone-number {
         margin-top: 10px;
         height: 25px;
         width: 100%;
         letter-spacing: 0.12em;
-        color: #ebebeb;
-    }
-    footer .details .email-info {
+        color: #ebebeb; }
+      footer .details .email-info {
         margin-top: 20px;
         height: 25px;
         width: 100%;
         letter-spacing: 0.12em;
-        color: lightgray;
-    }
-    footer .details .address {
+        color: lightgray; }
+      footer .details .address {
         width: 100%;
         height: 90px;
         letter-spacing: 0.12em;
-        color: #ebebeb;
-    }
-    footer .details .address ul {
-        list-style-type: none;
-        padding-left: 20px;
-    }
-    footer .details .address ul li {
-        list-style-type: none;
-        padding: 2.5px 0px 2.5px 0px;
-    }
+        color: #ebebeb; }
+        footer .details .address ul {
+          list-style-type: none;
+          padding-left: 20px; }
+          footer .details .address ul li {
+            list-style-type: none;
+            padding: 2.5px 0px 2.5px 0px; }
     footer #social-details {
-        height: 250px;
-        width: 50%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        background-color: #3c6980;
-    }
-    footer #social-details #social-info {
+      height: 250px;
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      background-color: #3c6980; }
+      footer #social-details #social-info {
         width: 250px;
-        height: 250px;
-    }
-    footer #social-details #social-info #social-layout {
-        width: inherit;
-        height: 125px;
-    }
-    footer #social-details #social-info #social-layout #social-name {
-        width: inherit;
-        height: 62.5px;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.1em;
-        letter-spacing: 0.12em;
-        color: white;
-    }
-    footer #social-details #social-info #social-layout #social-icons {
-        width: 250px;
-        height: 62.5px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-    footer #social-details #social-info #event-layout {
-        width: 250px;
-        height: 125px;
-    }
-    footer #social-details #social-info #event-name {
-        width: 250px;
-        height: 62.5px;
-        color: white;
-        font-family: "Roboto Slab", serif;
-        font-size: 1.1em;
-        letter-spacing: 0.12em;
-    }
-    footer #social-details #social-info #event-icons {
-        width: 250px;
-        height: 62.5px;
-    }
-    footer #social-details #social-info #icon-centralise {
-        width: 150px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-    }
-}
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+        height: 250px; }
+        footer #social-details #social-info #social-layout {
+          width: inherit;
+          height: 125px; }
+          footer #social-details #social-info #social-layout #social-name {
+            width: inherit;
+            height: 62.5px;
+            font-family: "Roboto Slab", serif;
+            font-size: 1.1em;
+            letter-spacing: 0.12em;
+            color: white; }
+          footer #social-details #social-info #social-layout #social-icons {
+            width: 250px;
+            height: 62.5px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center; }
+        footer #social-details #social-info #event-layout {
+          width: 250px;
+          height: 125px; }
+        footer #social-details #social-info #event-name {
+          width: 250px;
+          height: 62.5px;
+          color: white;
+          font-family: "Roboto Slab", serif;
+          font-size: 1.1em;
+          letter-spacing: 0.12em; }
+        footer #social-details #social-info #event-icons {
+          width: 250px;
+          height: 62.5px; }
+        footer #social-details #social-info #icon-centralise {
+          width: 150px;
+          display: flex;
+          justify-content: space-around; } }
 
 @keyframes fadein {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeout {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 @keyframes fadeout {
-    from {
-        opacity: 1;
-    }
-    to {
-        opacity: 0;
-    }
-}
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }

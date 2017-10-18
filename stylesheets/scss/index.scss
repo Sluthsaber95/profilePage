@@ -111,9 +111,23 @@
                         border: $border-black;
                         background-color: $white;
                         .project-img {
-                            // position: absolute;
+                            position: absolute;
+                            top: 0;
                             height: 150px;
                             width: 270px;
+                        }
+                        .company-icon {
+                            height: 36px;
+                            position: absolute;
+                            top: 5px;
+                            left: 5px;
+                        }
+                        #fcc-icon {
+                            height: 40px;
+                        }
+                        #youtube-icon {
+                            top: 0;
+                            height: 40px;
                         }
                         .terminal-text {
                             font-family: $courier;
@@ -176,7 +190,6 @@
                         border: $border-black;
                         background-color: $white;
                         .project-img {
-                            // position: absolute;
                             height: 150px;
                             width: 270px;
                         }
@@ -548,14 +561,28 @@
                             width: 350px;
                             border: $border-black;
                             background-color: $white;
+                            .company-icon {
+                                height: 36px;
+                                position: absolute;
+                                top: 5px;
+                                left: 5px;
+                            }
+                            #fcc-icon {
+                                height: 40px;
+                            }
+                            #youtube-icon {
+                                top: 0;
+                                height: 40px;
+                            }
                             .project-img {
-                                // position: absolute;
+                                position: absolute;
+                                top: 0;
                                 height: 190px;
                                 width: 340px;
                             }
                             .terminal-text {
                                 font-family: $courier;
-                                font-size: 0.68em;
+                                font-size: 0.9em;
                                 margin: 4px 0px 4px 5px;
                                 color: $lime-green;
                             }
@@ -627,13 +654,14 @@
                             border: $border-black;
                             background-color: $white;
                             .project-img {
-                                // position: absolute;
+                                position: absolute;
+                                top: 0;
                                 height: 190px;
                                 width: 340px;
                             }
                             .terminal-text {
                                 font-family: $courier;
-                                font-size: 0.68em;
+                                font-size: 0.9em;
                                 margin: 4px 0px 4px 5px;
                                 color: $lime-green;
                             }
@@ -1000,14 +1028,28 @@
                             width: 525px;
                             border: $border-black;
                             background-color: $white;
+                            .company-icon {
+                                height: 50px;
+                                position: absolute;
+                                top: 10px;
+                                left: 10px;
+                            }
+                            #fcc-icon {
+                                height: 55px;
+                            }
+                            #youtube-icon {
+                                top: 0;
+                                height: 55px;
+                            }
                             .project-img {
-                                // position: absolute;
+                                position: absolute;
+                                top: 0;
                                 height: 290px;
                                 width: 515px;
                             }
                             .terminal-text {
                                 font-family: $courier;
-                                font-size: 0.68em;
+                                font-size: 1.2em;
                                 margin: 4px 0px 4px 5px;
                                 color: $lime-green;
                             }
@@ -1080,13 +1122,14 @@
                             border: $border-black;
                             background-color: $white;
                             .project-img {
-                                // position: absolute;
+                                position: absolute;
+                                top: 0;
                                 height: 290px;
                                 width: 515px;
                             }
                             .terminal-text {
                                 font-family: $courier;
-                                font-size: 0.68em;
+                                font-size: 1.2em;
                                 margin: 4px 0px 4px 5px;
                                 color: $lime-green;
                             }
