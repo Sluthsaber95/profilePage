@@ -43,8 +43,8 @@ var terminalMessage = {
 var projectLinks = {
         "0": "http://clerk-dolphin-85063.bitballoon.com/",
         "1": "http://gardener-kevin-53240.bitballoon.com/",
-        "2": "",
-        "3": "",
+        "2": "http://driver-alfred-51640.bitballoon.com/",
+        "3": "http://potter-pulses-31223.bitballoon.com/",
         "4": "",
         "5": "",
         "6": "",
@@ -101,6 +101,10 @@ projects[0].addEventListener('click', function(el) {
     // appends child div from within button element, given index `i`; more 
     // precisely from within {class="projectBtn"} makes the terminal message appear
     else {
+        // counters pressing items that aren't projects
+        if (!projectImg[i]) {
+            return undefined;
+        }
         projectLinks[`${i}`] === "" ?
             null : window.open(projectLinks[`${i}`]);
         const animationSpeed = 0.5;
